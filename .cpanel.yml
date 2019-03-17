@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/jameswilson/public_html/
-    - /bin/cp -R webpoint $DEPLOYPATH/webpoint
+    - /bin/cp -R images $DEPLOYPATH/images
