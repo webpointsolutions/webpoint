@@ -1,0 +1,39 @@
+@import "../../css/variables";
+
+/* Work */
+.Work {
+  margin-top: 263px;
+  .section-title {
+    margin-bottom: 73px;
+  }
+  &_list {
+    display: block;
+    margin-bottom: 238px;
+    text-decoration: none;
+    $root: &;
+    &_title {
+      color: $black;
+      font-size: 28px;
+      line-height: 117.4%;
+      margin-top: 32px;
+    }
+    &_description {
+      color: $descriptionText;
+      font-family: "Circe Light", sans-serif;
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 117.4%;
+      margin-top: 11px;
+      opacity: 0;
+      transition: opacity ease-out 0.4s;
+    }
+  }
+}
+.Work_list {
+  &:hover {
+    .Work_list_description {
+      opacity: 0.7;
+      transition: opacity ease-in 0.4s;
+    }
+  }
+}
