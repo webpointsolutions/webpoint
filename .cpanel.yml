@@ -1,7 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/jameswilson/public_html/
-    - /bin/cp -R /home/jameswilson/repositories/webpoint/dist/ $DEPLOYPATH
-    - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp page.html $DEPLOYPATH
