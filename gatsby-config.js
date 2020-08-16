@@ -7,7 +7,15 @@ module.exports = {
     author: `@webpoint`,
   },
   plugins: [
-    `gatsby-plugin-sass`,
+    {
+      resolve: "gatsby-plugin-sass",
+      options: {
+        data: `@import "${__dirname}/static/css/variables";`,
+        data: `@import "${__dirname}/static/css/fonts";`,
+        data: `@import "${__dirname}/static/css/function";`,
+        data: `@import "${__dirname}/static/css/components";`,
+      },
+    },
     {
       resolve: `gatsby-plugin-scroll-reveal`,
       options: {

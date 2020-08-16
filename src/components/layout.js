@@ -9,10 +9,12 @@ import React from "react"
 //import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./Header/header"
-import "../css/bootstrap-grid.min.css"
-import "../css/base.scss"
-import "../css/fonts.scss"
-import "../css/components.scss"
+import "../../static/css/bootstrap-grid.min.css"
+import "../../static/css/fonts.scss"
+import "../../static/css/function.scss"
+import "../../static/css/components.scss"
+import "../../static/css/variables.scss"
+import "../../static/css/base.scss"
 import Footer from "./Footer/footer"
 
 const Layout = ({ children }) => {

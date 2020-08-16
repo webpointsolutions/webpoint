@@ -1,6 +1,3 @@
-@import "../../css/function";
-@import "../../css/variables";
-
 header {
   padding: 53px 44px;
   @include respond-above(sm) {
