@@ -1,3 +1,6 @@
+@import "../../../static/css/function";
+@import "../../../static/css/variables";
+
 /* Work */
 .Work {
   margin-top: 263px;
@@ -24,6 +27,36 @@
       margin-top: 11px;
       opacity: 0;
       transition: opacity ease-out 0.4s;
+    }
+  }
+  .media-container {
+    position: relative;
+    overflow: hidden;
+    .open-case {
+      align-items: center;
+      background: $blue;
+      border-radius: 50%;
+      color: $white;
+      display: flex;
+      font-family: "Circle Light", sans-serif;
+      font-size: 18px;
+      line-height: 100.9%;
+      height: 91px;
+      justify-content: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      opacity: 0;
+      transform: translate(-50%, -50%);
+      transition: opacity ease 500ms;
+      width: 91px;
+      z-index: 99;
+    }
+    &:hover {
+      .open-case {
+        opacity: 1;
+        transition: opacity ease 500ms;
+      }
     }
   }
 }

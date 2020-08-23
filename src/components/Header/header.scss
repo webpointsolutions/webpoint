@@ -1,6 +1,31 @@
+@import "../../../static/css/function";
+@import "../../../static/css/variables";
+
 header {
-  padding: 53px 44px;
+  padding: 0 44px;
+  transition: height ease 500ms;
+  height: 147px;
+  display: flex;
+  align-items: center;
   @include respond-above(sm) {
     padding: 53px 10px;
+  }
+  &.scroll {
+    height: 80px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    animation: fadeInDownBig 500ms ease-in both;
+  }
+}
+
+@keyframes fadeInDownBig {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -150px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
   }
 }

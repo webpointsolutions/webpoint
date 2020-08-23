@@ -2,20 +2,26 @@ import React from "react"
 import "./heroVideo.scss"
 
 const HeroVideo = () => (
-  <section className="HeroVideo">
+  <section data-aos="fade-up" className="HeroVideo">
     <div className="container-fluid">
       <div className="row justify-content-center">
         <div className="col-lg-10">
-          <div className="HeroVideo_text" data-sal="slide-up">
-            <h1>
-              We are a full service web & mobile applications development
+          <div className="HeroVideo_text">
+            <h1 data-aos="fade-up" data-aos-duration="800">
+              We are a full service web &amp; mobile applications development
               company
             </h1>
-            <a href="#">Let’s work together</a>
+            <div data-aos="fade-up" data-aos-duration="1500">
+              <a href="#">Let’s work together</a>
+            </div>
           </div>
         </div>
         <div className="col-lg-11">
-          <div className="HeroVideo_video">
+          <div
+            className="HeroVideo_video"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
             <video
               muted
               playsInline

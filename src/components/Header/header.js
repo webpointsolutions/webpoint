@@ -31,10 +31,8 @@ const Header = () => {
 
   return (
     <>
-      <header>
-        <div
-          className={scrolled ? "scroll container-fluid" : "container-fluid"}
-        >
+      <header className={scrolled ? "scroll " : ""}>
+        <div className="container-fluid">
           <div className="d-flex row justify-content-center">
             <div className="col-lg-12 d-flex justify-content-between">
               <div className="logo">
