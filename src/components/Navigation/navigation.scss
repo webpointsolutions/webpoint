@@ -19,7 +19,7 @@
     position: relative;
     .menu {
       list-style: none;
-      margin-top: 274px;
+      margin-top: 230px;
       max-width: 1096px;
       padding: 0;
       li {
@@ -65,12 +65,17 @@
         }
         @include respond-above(sm) {
           display: block;
-          margin-left: 124px;
-          &:first-child {
-            margin-left: 124px;
-            &:before {
-              display: block;
-            }
+          margin-left: 0;
+          line-height: 45px;
+          &:first-child,
+          &:last-child {
+            margin-left: 0;
+          }
+          &:before {
+            display: none;
+          }
+          a {
+            font-size: 30px;
           }
         }
       }
@@ -83,9 +88,13 @@
       display: inline-block;
       font-size: 16px;
       line-height: 117.4%;
+      margin-right: 50px;
       margin-top: 82px;
       opacity: 0.5;
       text-decoration: none;
+      @include respond-above(sm) {
+        margin-top: 30px;
+      }
     }
   }
   &.active {

@@ -5,12 +5,32 @@
   display: block;
   font-size: 60px;
   line-height: 117.4%;
+  @include respond-above(sm) {
+    font-size: 35px;
+  }
 }
 .mt185 {
   margin-top: 185px;
+  @include respond-above(sm) {
+    margin-top: 0;
+  }
+}
+.mb123 {
+  margin-bottom: 123px !important;
 }
 .sm-column {
   @include respond-above(sm) {
     flex-direction: column;
   }
 }
+// .animate {
+//   position: relative;
+//   top: 100px;
+//   opacity: 0;
+//   transition: all ease 500ms;
+//   &.fadeIn {
+//     top: 0;
+//     opacity: 1;
+//     transition: all ease 500ms;
+//   }
+// }

@@ -10,6 +10,9 @@
     @include respond-above(lg) {
       margin-left: 150px;
     }
+    @include respond-above(sm) {
+      margin-left: 0;
+    }
     &_wrap {
       margin-bottom: 35px;
     }
@@ -17,6 +20,41 @@
       cursor: pointer;
       font-size: 36px;
       line-height: 121.4%;
+      transition: all ease 500ms;
+      &:hover {
+        color: $blue;
+        transition: all ease 500ms;
+        &:after {
+          background: url(../../../static/images/angle-down-blue.svg) no-repeat;
+          transition: all ease 500ms;
+          background-size: contain;
+        }
+      }
+      &:after {
+        content: "";
+        background: url(../../../static/images/angle-down.svg) no-repeat;
+        background-size: contain;
+        display: inline-block;
+        height: 10px;
+        margin-left: 10px;
+        transition: all ease 500ms;
+        width: 15px;
+        top: -3px;
+        position: relative;
+      }
+      &.active {
+        &:after {
+          transform: rotate(180deg);
+        }
+      }
+      @include respond-above(sm) {
+        font-size: 20px;
+        &:after {
+          height: 6px;
+          width: 12px;
+          top: -2px;
+        }
+      }
     }
     &_description {
       list-style: none;
@@ -31,11 +69,17 @@
         font-weight: 300;
         font-size: 20px;
         line-height: 164.4%;
+        @include respond-above(sm) {
+          font-size: 14px;
+        }
       }
       &.active {
         max-height: 500px;
         transition: max-height 0.4s ease-in;
       }
     }
+  }
+  @include respond-above(sm) {
+    margin-top: 100px;
   }
 }

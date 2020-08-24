@@ -16,6 +16,9 @@ header {
     top: 0;
     z-index: 999;
     animation: fadeInDownBig 500ms ease-in both;
+    .logo {
+      visibility: hidden;
+    }
   }
 }
 

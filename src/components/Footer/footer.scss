@@ -32,8 +32,16 @@
         position: absolute;
         bottom: -8px;
         left: 0;
+        opacity: 0;
         transition: all ease 500ms;
-        width: 100%;
+        width: 0%;
+      }
+      &:hover {
+        &:after {
+          opacity: 1;
+          transition: all ease 500ms;
+          width: 100%;
+        }
       }
     }
     @include respond-above(lg) {

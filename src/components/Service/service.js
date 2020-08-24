@@ -22,6 +22,11 @@ const Service = () => {
                   onClick={() => {
                     setDesign(!design)
                   }}
+                  className={
+                    design
+                      ? "Services_list_title active"
+                      : "Services_list_title"
+                  }
                 >
                   Design
                 </span>
@@ -44,6 +49,11 @@ const Service = () => {
                   onClick={() => {
                     sevtDevelopment(!development)
                   }}
+                  className={
+                    development
+                      ? "Services_list_title active"
+                      : "Services_list_title"
+                  }
                 >
                   Development
                 </span>
@@ -68,6 +78,11 @@ const Service = () => {
                   onClick={() => {
                     setEcommerce(!ecommerce)
                   }}
+                  className={
+                    ecommerce
+                      ? "Services_list_title active"
+                      : "Services_list_title"
+                  }
                 >
                   E-Commerce
                 </span>
@@ -91,6 +106,11 @@ const Service = () => {
                   onClick={() => {
                     setContent(!content)
                   }}
+                  className={
+                    content
+                      ? "Services_list_title active"
+                      : "Services_list_title"
+                  }
                 >
                   Content
                 </span>

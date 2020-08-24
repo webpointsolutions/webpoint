@@ -11,7 +11,7 @@ const HeroVideo = () => (
               We are a full service web &amp; mobile applications development
               company
             </h1>
-            <div data-aos="fade-up" data-aos-duration="1500">
+            <div data-aos="fade-up" data-aos-duration="1000">
               <a href="#">Let’s work together</a>
             </div>
           </div>

@@ -38,6 +38,9 @@ const Navigation = ({ menu, menuToggle }) => (
           <a href="#" className="facebook">
             Facebook
           </a>
+          <a href="#" className="facebook">
+            Instagram
+          </a>
         </div>
       </div>
     </div>

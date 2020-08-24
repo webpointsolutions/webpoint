@@ -11,7 +11,6 @@
     display: block;
     margin-bottom: 238px;
     text-decoration: none;
-    $root: &;
     &_title {
       color: $black;
       font-size: 28px;
@@ -27,6 +26,9 @@
       margin-top: 11px;
       opacity: 0;
       transition: opacity ease-out 0.4s;
+    }
+    @include respond-above(sm) {
+      margin-bottom: 60px;
     }
   }
   .media-container {
@@ -56,6 +58,37 @@
       .open-case {
         opacity: 1;
         transition: opacity ease 500ms;
+      }
+    }
+  }
+  @include respond-above(sm) {
+    margin-top: 100px;
+  }
+  .see_more {
+    display: inline-block;
+    font-family: "Circe", sans-serif;
+    font-size: 28px;
+    line-height: 117.4%;
+    color: $descriptionText;
+    opacity: 0.5;
+    margin-bottom: 187px;
+    text-decoration: none;
+    position: relative;
+    transition: all ease 500ms;
+    &:after {
+      content: "";
+      border: 1px solid $descriptionText;
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      transition: all ease 500ms;
+      width: 100%;
+      opacity: 0.5;
+    }
+    &:hover {
+      opacity: 1;
+      &:after {
+        opacity: 1;
       }
     }
   }

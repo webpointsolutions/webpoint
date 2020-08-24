@@ -16,7 +16,7 @@ const Footer = () => (
           <div className="footer_right">
             <span className="footer_right_title">Address</span>
             <span className="footer_right_description">
-              55 Alcovy Forest <br /> Dr Covington GA 30014
+              255 Arthur's Ln <br /> Covington, GA 30016
             </span>
             <span className="footer_right_title">Get in touch</span>
             <span className="footer_right_description">
