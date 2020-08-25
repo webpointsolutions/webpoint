@@ -1,6 +1,6 @@
 import React from "react"
 import "./navigation.scss"
-
+import { Link } from "gatsby"
 const Navigation = ({ menu, menuToggle }) => (
   <section className={menu ? "Navigation active" : "Navigation"}>
     <div className="container-fluid">
@@ -21,18 +21,18 @@ const Navigation = ({ menu, menuToggle }) => (
         <div className="col-lg-11 navbar">
           <ul className="menu">
             <li>
-              <a className="active" href="#">
+              <Link className="active" to="/">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">Agency</a>
+              <Link to="/agency">Agency</Link>
             </li>
             <li>
-              <a href="#">Work</a>
+              <Link to="/work">Work</Link>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
           <a href="#" className="facebook">
