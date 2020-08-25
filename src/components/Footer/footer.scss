@@ -48,13 +48,15 @@
       margin-right: 150px;
       &_link {
         display: inline;
-        font-size: 60px;
+        font-size: 45px;
       }
     }
     @include respond-above(sm) {
       margin-right: 0;
+    }
+    @include respond-above(xs) {
       &_link {
-        font-size: 55px;
+        font-size: 30px;
       }
     }
   }
@@ -102,6 +104,14 @@
       display: inline-block;
       margin-left: 50px;
       text-decoration: none;
+    }
+    @include respond-above(xs) {
+      text-align: center;
+      a {
+        display: block;
+        margin-top: 10px;
+        margin-left: 0;
+      }
     }
   }
 }
