@@ -1,0 +1,34 @@
+@import "../../static/css/function";
+@import "../../static/css/variables";
+
+//Privacy Policy scss
+.privacy-policy {
+  color: $black;
+  &-wrap {
+    max-width: 80%;
+    margin-bottom: 126px;
+    h1 {
+      font-family: "Circe Light", sans-serif;
+      font-weight: 300;
+      font-size: 47px;
+      line-height: 117.4%;
+      @include respond-above(sm) {
+        font-size: 30px;
+      }
+    }
+    h3 {
+      font-family: "Circe", sans-serif;
+      font-size: 24px;
+      line-height: 141%;
+      margin-top: 60px;
+    }
+    p {
+      font-family: "Circe Light", sans-serif;
+      font-size: 20px;
+      line-height: 141%;
+    }
+    @include respond-above(sm) {
+      max-width: 100%;
+    }
+  }
+}
