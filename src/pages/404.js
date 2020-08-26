@@ -9,7 +9,7 @@ const NotFoundPage = () => (
     <div className="container-fluid not-found">
       <div className="row justify-content-center">
         <div className="col-10">
-          <img src="../../static/images/404.png" alt="404" />
+          <img src="/images/404.png" alt="404" />
           <h1>Whoops, that page is gone.</h1>
           <a href="" className="back-btn">
             <i className="arr-left"></i>Go Back

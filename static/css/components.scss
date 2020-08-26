@@ -46,7 +46,7 @@
     text-decoration: none;
     transition: color ease 500ms;
     i {
-      background: url(../images/arr-left.svg) no-repeat;
+      background: url(/arr-left.svg) no-repeat;
       background-size: cover;
       display: inline-block;
       height: 11px;
@@ -58,7 +58,7 @@
       color: $blue;
       transition: color ease 500ms;
       i {
-        background: url(../images/arr-left-blue.svg) no-repeat;
+        background: url(/arr-left.svg) no-repeat;
         transition: all ease 500ms;
       }
     }
