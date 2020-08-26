@@ -23,14 +23,44 @@
     flex-direction: column;
   }
 }
-// .animate {
-//   position: relative;
-//   top: 100px;
-//   opacity: 0;
-//   transition: all ease 500ms;
-//   &.fadeIn {
-//     top: 0;
-//     opacity: 1;
-//     transition: all ease 500ms;
-//   }
-// }
+
+// 404 page scss
+.not-found {
+  text-align: center;
+  margin: 176px 0;
+  img {
+    max-width: 100%;
+  }
+  h1 {
+    color: $black;
+    font-family: "Circe Light", sans-serif;
+    font-weight: 300;
+    font-size: 42px;
+    line-height: 117.4%;
+  }
+  .back-btn {
+    color: $descriptionText;
+    font-family: "Circe", sans-serif;
+    font-size: 17px;
+    line-height: 117.4%;
+    text-decoration: none;
+    transition: color ease 500ms;
+    i {
+      background: url(../images/arr-left.svg) no-repeat;
+      background-size: cover;
+      display: inline-block;
+      height: 11px;
+      margin-right: 8px;
+      width: 18px;
+      transition: all ease 500ms;
+    }
+    &:hover {
+      color: $blue;
+      transition: color ease 500ms;
+      i {
+        background: url(../images/arr-left-blue.svg) no-repeat;
+        transition: all ease 500ms;
+      }
+    }
+  }
+}
