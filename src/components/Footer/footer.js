@@ -26,6 +26,9 @@ const Footer = () => (
             <a className="facebook" href="#">
               Facebook
             </a>
+            <a className="facebook" href="#">
+              Instagram
+            </a>
           </div>
         </div>
         <div className="col-lg-10 footer_bottom">

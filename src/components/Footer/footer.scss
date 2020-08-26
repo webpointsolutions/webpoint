@@ -82,9 +82,10 @@
     }
     .facebook {
       color: $white;
-      display: block;
+      display: inline-block;
       font-size: 16px;
       line-height: 117.4%;
+      margin-right: 24px;
       margin-top: -33px;
       opacity: 0.61;
       text-decoration: none;
