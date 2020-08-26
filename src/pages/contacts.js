@@ -10,14 +10,14 @@ const Contact = () => (
       <div className="row justify-content-center">
         <div className="col-10">
           <div className="contact">
-            <h1>We’d like to work together</h1>
+            <h1 data-aos="fade-up">We’d like to work together</h1>
             <div className="form-wrap">
-              <h3>Drop us a line</h3>
-              <p>
+              <h3 data-aos="fade-up">Drop us a line</h3>
+              <p data-aos="fade-up">
                 Feel free to fill out this form to just say hi or start a new
                 project.
               </p>
-              <form>
+              <form data-aos="fade-up">
                 <div className="d-flex justify-content-between">
                   <input placeholder="Name" type="text" name="name" />
                   <div class="input-wrapper">
@@ -52,7 +52,7 @@ const Contact = () => (
                 </div>
                 <button>Send It</button>
               </form>
-              <div className="contact-btm">
+              <div className="contact-btm" data-aos="fade-up">
                 <p>or just write to us</p>
                 <a href="mailto:sales@webpoint.io">sales@webpoint.io</a>
               </div>

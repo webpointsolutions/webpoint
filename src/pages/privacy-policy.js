@@ -10,8 +10,8 @@ const PrivacyPolicy = () => (
       <div className="row justify-content-center">
         <div className="col-10">
           <div className="privacy-policy-wrap">
-            <h1>Privacy Policy</h1>
-            <p>
+            <h1 data-aos="fade-up">Privacy Policy</h1>
+            <p data-aos="fade-up">
               WebPoint Solutions LLC (https://webpoint.io./) is committed to
               protecting the privacy of all of our website visitors. In this
               privacy policy, you can familiarize yourself with the different
@@ -19,12 +19,12 @@ const PrivacyPolicy = () => (
               have any questions regarding how WebPoint Solutions LLC protects
               your privacy, feel free to contact us via phone or email:
             </p>
-            <p>
+            <p data-aos="fade-up">
               Email:info@webpoint.io <br />
               Phone: +1 (404) 755-6225.
             </p>
-            <h3>Log Files</h3>
-            <p>
+            <h3 data-aos="fade-up">Log Files</h3>
+            <p data-aos="fade-up">
               WebPoint Solutions uses standard procedures when we use log files.
               These are the files that log when a visitor visits our website.
               Every hosting company does this as a way to provide hosting
@@ -33,15 +33,15 @@ const PrivacyPolicy = () => (
               pages, browser type, and even how many clicks you made on our
               website.{" "}
             </p>
-            <p>
+            <p data-aos="fade-up">
               You can rest assured that this information is not linked to any
               identifiable personal information. We use this information solely
               for the purpose of analyzing trends, administering our website,
               tracking our visitors' movements while they are on our website,
               and obtaining demographic information.
             </p>
-            <h3>Cookies and Beacons</h3>
-            <p>
+            <h3 data-aos="fade-up">Cookies and Beacons</h3>
+            <p data-aos="fade-up">
               All websites use cookies, so WebPoint Solutions is no exception!
               Cookies are used by every website to store information, such as
               visitor preferences and the pages that the visitor visited while
@@ -51,14 +51,14 @@ const PrivacyPolicy = () => (
               visitors' browser types and other information that we gain through
               cookies.
             </p>
-            <p>
+            <p data-aos="fade-up">
               If you would like to, you can disable or manage cookies through
               your browser settings. If you would like to learn more about how
               to manage cookies with the browser that you are using, you will
               need to find it on your browser's respective website.
             </p>
-            <h3>Third-Party Privacy Policies</h3>
-            <p>
+            <h3 data-aos="fade-up">Third-Party Privacy Policies</h3>
+            <p data-aos="fade-up">
               WebPoint Solutions's Privacy Policy does not apply to other
               advertisers or websites. You will need to consider the individual
               privacy policies of any respective third-party ad servers,
@@ -67,8 +67,8 @@ const PrivacyPolicy = () => (
               opt-out of their options and what their privacy protection
               practices are.
             </p>
-            <h3>Children's Information</h3>
-            <p>
+            <h3 data-aos="fade-up">Children's Information</h3>
+            <p data-aos="fade-up">
               WebPoint Solutions is very serious about protecting children if
               and when they land on our website. Of course, we encourage parents
               always to observe, monitor, and participate in their children's
@@ -82,15 +82,15 @@ const PrivacyPolicy = () => (
               gladly and promptly remove any such information from our records
               if it has been acquired.{" "}
             </p>
-            <h3>Online Privacy Policy Only</h3>
-            <p>
+            <h3 data-aos="fade-up">Online Privacy Policy Only</h3>
+            <p data-aos="fade-up">
               This privacy policy is limited in scope, as it only applies to our
               activities online. Our website visitors should know that this
               policy is not applicable to any information that is obtained via
               offline channels outside of this website.
             </p>
-            <h3>Consent</h3>
-            <p>
+            <h3 data-aos="fade-up">Consent</h3>
+            <p data-aos="fade-up">
               By using https://webpoint.io./, you are consenting to the terms
               and conditions set forth in this privacy policy.
             </p>
