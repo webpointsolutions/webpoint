@@ -1,0 +1,18 @@
+@import "../../static/css/function";
+@import "../../static/css/variables";
+
+.Work {
+  &.work-inner {
+    margin-top: 0;
+    h1 {
+      font-family: "Circe Light", sans-serif;
+      font-weight: 300;
+      font-size: 47px;
+      line-height: 117.4%;
+      margin-bottom: 83px;
+      @include respond-above(sm) {
+        font-size: 30px;
+      }
+    }
+  }
+}

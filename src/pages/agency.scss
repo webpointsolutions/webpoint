@@ -1,0 +1,148 @@
+@import "../../static/css/function";
+@import "../../static/css/variables";
+
+.Agency {
+  &_banner {
+    background: $white;
+    margin-bottom: 57px;
+    min-height: 641px;
+    @include respond-above(sm) {
+      min-height: 400px;
+    }
+    h1 {
+      color: $textColor;
+      font-family: "Circe Light", sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 69px;
+      line-height: 126.9%;
+      width: 90%;
+      margin: 0 auto;
+      @include respond-above(sm) {
+        font-size: 30px;
+      }
+    }
+  }
+  &_services {
+    background: rgba(31, 76, 228, 0.1);
+    padding: 118px 0;
+    .title {
+      color: $textColor;
+      font-family: "Circe", sans-serif;
+      font-size: 24px;
+      line-height: 121.4%;
+      opacity: 0.5;
+      &_desc {
+        color: $textColor;
+        font-family: "Circe Light", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 49px;
+        line-height: 121.4%;
+        margin: 11px 0 0 0;
+        max-width: 897px;
+        @include respond-above(sm) {
+          font-size: 25px;
+        }
+      }
+    }
+    &_btm {
+      margin-top: 100px;
+      h4 {
+        color: $textColor;
+        font-family: "Circe", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 121.4%;
+        margin: 0;
+        @include respond-above(sm) {
+          font-size: 18px;
+        }
+      }
+      ul {
+        list-style: none;
+        margin: 10px 0 62px 0;
+        padding: 0;
+        li {
+          color: $textColor;
+          font-family: "Circe Light", sans-serif;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 20px;
+          line-height: 164.4%;
+        }
+      }
+    }
+    &.manifesto {
+      background: $footerBg;
+      .title {
+        color: $white;
+        &_desc {
+          color: $white;
+        }
+      }
+      h4 {
+        font-family: "Circe Light", sans-serif;
+        font-weight: 300;
+        color: $white;
+        opacity: 0.5;
+        margin-bottom: 29px;
+        transition: all ease 500ms;
+        &:hover {
+          opacity: 1;
+          transition: all ease 500ms;
+        }
+      }
+    }
+  }
+  &_slider {
+    background: $footerBg;
+    padding-bottom: 100px;
+    .slick-slider {
+      margin-right: -15px;
+      overflow: hidden;
+      @include respond-above(sm) {
+        margin-right: 0;
+      }
+      .slick-arrow {
+        display: none !important;
+      }
+    }
+    .slick-list {
+      margin-right: -95px;
+      @include respond-above(md) {
+        margin-right: -50px;
+      }
+    }
+    .slick-slide > div {
+      margin-right: 95px;
+      @include respond-above(md) {
+        margin-right: 50px;
+      }
+    }
+    .slider-wrap {
+      position: relative;
+      .button {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        width: 40%;
+        opacity: 0;
+        &-prev {
+          left: 0;
+          cursor: url("../../static/images/long-arrow-left.svg"),
+            url("../../static/images/long-arrow-left.svg"), default;
+        }
+        &-next {
+          right: 0;
+          cursor: url("../../static/images/long-arrow-right.svg"),
+            url("../../static/images/long-arrow-right.svg"), default;
+        }
+      }
+    }
+    @include respond-above(sm) {
+      padding-bottom: 0;
+    }
+  }
+}

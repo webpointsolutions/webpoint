@@ -25,14 +25,14 @@
         color: $blue;
         transition: all ease 500ms;
         &:after {
-          background: url(../../../static/images/angle-down-blue.svg) no-repeat;
+          background: url(/images/angle-down-blue.svg) no-repeat;
           transition: all ease 500ms;
           background-size: contain;
         }
       }
       &:after {
         content: "";
-        background: url(../../../static/images/angle-down.svg) no-repeat;
+        background: url(/images/angle-down.svg) no-repeat;
         background-size: contain;
         display: inline-block;
         height: 10px;

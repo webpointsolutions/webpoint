@@ -18,6 +18,9 @@
 .mb123 {
   margin-bottom: 123px !important;
 }
+.mb200 {
+  margin-bottom: 200px !important;
+}
 .sm-column {
   @include respond-above(sm) {
     flex-direction: column;

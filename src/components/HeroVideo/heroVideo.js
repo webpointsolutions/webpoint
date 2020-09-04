@@ -1,5 +1,6 @@
 import React from "react"
 import "./heroVideo.scss"
+import { Link } from "gatsby"
 
 const HeroVideo = () => (
   <section data-aos="fade-up" className="HeroVideo">
@@ -12,7 +13,7 @@ const HeroVideo = () => (
               company
             </h1>
             <div data-aos="fade-up" data-aos-duration="1000">
-              <a href="#">Let’s work together</a>
+              <Link to="/contact">Let’s work together</Link>
             </div>
           </div>
         </div>
