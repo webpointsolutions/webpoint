@@ -3,6 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "./contact.scss"
+import { Link } from "gatsby"
 
 const Contact = () => (
   <Layout>
@@ -49,10 +50,14 @@ const Contact = () => (
                   ></span>
                 </div>
                 <div class="round">
-                  <input type="checkbox" id="checkbox" />
+                  <input
+                    type="checkbox"
+                    id="checkbox"
+                    required="required"
+                  ></input>
                   <label for="checkbox">
                     <span></span>I have read and agree with{" "}
-                    <a href="">Privacy Policy</a>
+                    <Link to="/privacy-policy">Privacy Policy</Link>
                   </label>
                 </div>
                 <button>Send It</button>

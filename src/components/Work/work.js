@@ -10,7 +10,7 @@ const Work = () => (
           <span className="section-title" data-aos="fade-up">
             Our Work
           </span>
-          <a href="#" className="Work_list" data-aos="fade-up">
+          <Link to="/lineage-journey" className="Work_list" data-aos="fade-up">
             <video
               muted
               playsInline
@@ -26,8 +26,8 @@ const Work = () => (
             <div className="Work_list_description">
               UX/UI, Mobile, Fron-end, Back-end
             </div>
-          </a>
-          <a href="#" className="Work_list" data-aos="fade-up">
+          </Link>
+          <Link to="/cryptox" className="Work_list" data-aos="fade-up">
             <video
               muted
               playsInline
@@ -43,8 +43,8 @@ const Work = () => (
             <div className="Work_list_description">
               UX/UI, Mobile, Fron-end, Back-end
             </div>
-          </a>
-          <a href="#" className="Work_list" data-aos="fade-up">
+          </Link>
+          <Link to="/" className="Work_list" data-aos="fade-up">
             <video
               muted
               playsInline
@@ -60,7 +60,7 @@ const Work = () => (
             <div className="Work_list_description">
               UX/UI, Mobile, Fron-end, Back-end
             </div>
-          </a>
+          </Link>
           <div className="row">
             <div className="col-md-6 col-sm-12">
               <Link to="/youth-summit" className="Work_list" data-aos="fade-up">

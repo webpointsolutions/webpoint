@@ -24,10 +24,18 @@ const Footer = () => (
               <a href="mailto:sales@webpoint.io">sales@webpoint.io</a> <br />
               +1 (470) 755-6225
             </span>
-            <a className="facebook" href="#">
+            <a
+              className="facebook"
+              href="https://facebook.com/webpointsolutionsllc/"
+              target="_blank"
+            >
               Facebook
             </a>
-            <a className="facebook" href="#">
+            <a
+              className="facebook"
+              target="_blank"
+              href="https://www.instagram.com/webpointsolutions/"
+            >
               Instagram
             </a>
           </div>
