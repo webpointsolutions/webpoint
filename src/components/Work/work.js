@@ -24,7 +24,7 @@ const Work = () => (
             </video>
             <div className="Work_list_title">Lineage Journey</div>
             <div className="Work_list_description">
-              UX/UI, Mobile, Fron-end, Back-end
+              UI/UX, Mobile, Front-end, CMS
             </div>
           </Link>
           <Link to="/cryptox" className="Work_list" data-aos="fade-up">
@@ -41,7 +41,7 @@ const Work = () => (
             </video>
             <div className="Work_list_title">Cryptox</div>
             <div className="Work_list_description">
-              UX/UI, Mobile, Fron-end, Back-end
+              UI/UX, Front-end
             </div>
           </Link>
           <Link to="/" className="Work_list" data-aos="fade-up">
@@ -58,7 +58,7 @@ const Work = () => (
             </video>
             <div className="Work_list_title">Newstart</div>
             <div className="Work_list_description">
-              UX/UI, Mobile, Fron-end, Back-end
+              UI/UX, Front-end, CMS
             </div>
           </Link>
           <div className="row">
@@ -73,7 +73,7 @@ const Work = () => (
                 </div>
                 <div className="Work_list_title">Youth Summit</div>
                 <div className="Work_list_description">
-                  UX/UI, Mobile, Fron-end, Back-end
+                  UI/UX, Front-end, CMS
                 </div>
               </Link>
               <Link
@@ -89,10 +89,10 @@ const Work = () => (
                   </span>
                 </div>
                 <div className="Work_list_title">
-                  Children's Century ClassNameics
+                  Children's Century Classics
                 </div>
                 <div className="Work_list_description">
-                  UX/UI, Mobile, Fron-end, Back-end
+                  UI/UX, Mobile App, Front-end, CMS
                 </div>
               </Link>
               <Link to="/fhcb" className="Work_list" data-aos="fade-up">
@@ -107,7 +107,7 @@ const Work = () => (
                   Family Home Christian Books
                 </div>
                 <div className="Work_list_description">
-                  UX/UI, Mobile, Fron-end, Back-end
+                  UI/UX Design
                 </div>
               </Link>
             </div>
@@ -122,7 +122,7 @@ const Work = () => (
                 </div>
                 <div className="Work_list_title">Corniche Watches</div>
                 <div className="Work_list_description">
-                  UX/UI, Mobile, Fron-end, Back-end
+                  UI/UX, Fron-end, CMS
                 </div>
               </Link>
               <Link
@@ -139,7 +139,7 @@ const Work = () => (
                 </div>
                 <div className="Work_list_title">LSAT Preparation</div>
                 <div className="Work_list_description">
-                  UX/UI, Mobile, Fron-end, Back-end
+                  UI/UX Design
                 </div>
               </Link>
               <Link
@@ -156,7 +156,7 @@ const Work = () => (
                 </div>
                 <div className="Work_list_title">Plate App</div>
                 <div className="Work_list_description">
-                  UX/UI, Mobile, Fron-end, Back-end
+                  UI/UX, Mobile, CMS
                 </div>
               </Link>
               <Link to="/work" className="see_more">

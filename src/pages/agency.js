@@ -45,7 +45,7 @@ const Agnecy = () => (
                     <ul>
                       <li>HTML/CSS/JS</li>
                       <li>React/Angular/Vue</li>
-                      <li>Backend/API integrations</li>
+                      <li>Backend/API integrations/CMS</li>
                       <li>React Native/Flutter/Native Script apps</li>
                       <li>Speed Optimization</li>
                       <li>WordPress</li>
@@ -81,7 +81,7 @@ const Agnecy = () => (
       <div className="container-fluid">
         <div className="row justify-content-center">
           <div className="col-10">
-            <span className="title">Manifesto</span>
+            <span className="title">Our Values</span>
             <h3 className="title_desc">
               In our work, we adhere to the rules that help to maintain a high
               level of service.

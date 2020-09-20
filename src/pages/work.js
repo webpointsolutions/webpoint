@@ -30,7 +30,7 @@ const Work = () => (
                     </div>
                     <div className="Work_list_title">Youth Summit</div>
                     <div className="Work_list_description">
-                      UX/UI, Mobile, Fron-end, Back-end
+                      UI/UX, Front-end, CMS
                     </div>
                   </Link>
                   <Link
@@ -47,7 +47,7 @@ const Work = () => (
                     </div>
                     <div className="Work_list_title">Lineage Journey</div>
                     <div className="Work_list_description">
-                      UX/UI, Mobile, Fron-end, Back-end
+                      UI/UX, Mobile, Front-end, CMS
                     </div>
                   </Link>
                   <Link to="/fhcb" className="Work_list" data-aos="fade-up">
@@ -65,7 +65,7 @@ const Work = () => (
                       Family Home Christian Books
                     </div>
                     <div className="Work_list_description">
-                      UX/UI, Mobile, Fron-end, Back-end
+                      UI/UX Design
                     </div>
                   </Link>
                   <Link
@@ -84,7 +84,7 @@ const Work = () => (
                       Children's Century Classics
                     </div>
                     <div className="Work_list_description">
-                      UX/UI, Mobile, Fron-end, Back-end
+                      UI/UX, Mobile App, Front-end, CMS
                     </div>
                   </Link>
                   <Link
@@ -101,7 +101,7 @@ const Work = () => (
                     </div>
                     <div className="Work_list_title">Sweet Sanity</div>
                     <div className="Work_list_description">
-                      UX/UI, Mobile, Fron-end, Back-end
+                     UI/UX, Front-end, CMS
                     </div>
                   </Link>
                   <Link
@@ -123,7 +123,7 @@ const Work = () => (
                       Home Health Education Service
                     </div>
                     <div className="Work_list_description">
-                      UX/UI, Mobile, Fron-end, Back-end
+                      UI/UX, Front-end, Custom API
                     </div>
                   </Link>
                   <Link
@@ -140,7 +140,7 @@ const Work = () => (
                     </div>
                     <div className="Work_list_title">Reach Nepal</div>
                     <div className="Work_list_description">
-                      UX/UI, Mobile, Fron-end, Back-end
+                      UI/UX, Front-end, API Integration
                     </div>
                   </Link>
                 </div>
@@ -155,7 +155,7 @@ const Work = () => (
                     </div>
                     <div className="Work_list_title">Corniche Watches</div>
                     <div className="Work_list_description">
-                      UX/UI, Mobile, Fron-end, Back-end
+                      UI/UX, Front-end, CMS
                     </div>
                   </Link>
                   <Link
@@ -174,7 +174,7 @@ const Work = () => (
                       Jeewit Bachan Mobile App
                     </div>
                     <div className="Work_list_description">
-                      UX/UI, Mobile, Fron-end, Back-end
+                      UI/UX, Mobile App, CMS
                     </div>
                   </Link>
                   <Link
@@ -191,7 +191,7 @@ const Work = () => (
                     </div>
                     <div className="Work_list_title">Plate App</div>
                     <div className="Work_list_description">
-                      UX/UI, Mobile, Fron-end, Back-end
+                      UI/UX, Mobile, Custom API
                     </div>
                   </Link>
                   <Link
@@ -208,7 +208,7 @@ const Work = () => (
                     </div>
                     <div className="Work_list_title">LSAT Preparation</div>
                     <div className="Work_list_description">
-                      UX/UI, Mobile, Fron-end, Back-end
+                      UI/UX Design
                     </div>
                   </Link>
                   <Link
@@ -227,7 +227,7 @@ const Work = () => (
                       Angelholm Brand Guidelines
                     </div>
                     <div className="Work_list_description">
-                      UX/UI, Mobile, Fron-end, Back-end
+                      UI/UX Design
                     </div>
                   </Link>
                   <Link
@@ -244,7 +244,7 @@ const Work = () => (
                     </div>
                     <div className="Work_list_title">Annual Report</div>
                     <div className="Work_list_description">
-                      UX/UI, Mobile, Fron-end, Back-end
+                      Graphic Design
                     </div>
                   </Link>
                   <Link to="/cryptox" className="Work_list" data-aos="fade-up">
@@ -257,7 +257,7 @@ const Work = () => (
                     </div>
                     <div className="Work_list_title">Cryptox</div>
                     <div className="Work_list_description">
-                      UX/UI, Mobile, Fron-end, Back-end
+                      UI/UX, Front-end
                     </div>
                   </Link>
                 </div>

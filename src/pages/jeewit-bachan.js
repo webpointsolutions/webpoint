@@ -7,16 +7,19 @@ import Portfolio from "../components/Portfolio/portfolio"
 const JeewitBachan = () => (
   <Layout>
     <SEO
-      title="Jeewit Bachan
-    "
+      title="Jeewit Bachan Website &amp; Mobile App" 
+      description="Create a complete design system for the client and then implement this into a modern responsive web app that was media focused and offered offline PWA functionality, in addition to a mobile app"
     />
     <Portfolio
-      projectName="Jeewit Bachan"
-      projectSummary="Plate App is a service for delivering your favorite food from restaurants on your mobile phone."
+      projectName="Jeewit Bachan Website &amp; Mobile App"
+      projectCategory="UI/UX, Branding Mobile, PWA, Front-end, CMS"
+      projectLink="https://jeewitbachan.com"
+      projectSummary="Jeewit Bachan is an online Christian resource site in the Nepali language"
       bannerImage="/images/Jeewit-Bachan-banner.png"
-      goalsContent="First of all, we developed a design system, so that all products of the company have a common style and adhere to the same rules in design. The interface has received significant improvements. Now the main functions have become more accessible, and thanks to the responsive design the site is convenient to use on any device."
+      goalsContent="Create a complete design system for the client and then implement this into a modern responsive web app that was media focused and offered offline PWA functionality, in addition to a mobile app"
       processImage="/images/Jeewit-Bachan-process.png"
-      resultContent="First of all, we developed a design system, so that all products of the company have a common style and adhere to the same rules in design. The interface has received significant improvements. Now the main functions have become more accessible, and thanks to the responsive design the site is convenient to use on any device."
+      resultContent="This project is still in progress, and should be completed by November, 2020"
+      techUsed={["Figma", "React", "MongoDB", "StrapiCMS", "React Native", "AWS EC2"]}
       nextPage="/fhcb"
     ></Portfolio>
   </Layout>

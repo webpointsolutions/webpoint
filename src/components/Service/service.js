@@ -66,7 +66,7 @@ const Service = () => {
                 >
                   <li>HTML/CSS/JS</li>
                   <li>React/Angular/Vue</li>
-                  <li>Backend/API integrations</li>
+                  <li>Backend/API integrations/CMS</li>
                   <li>React Native/Flutter/Native Script apps</li>
                   <li>Speed Optimization</li>
                   <li>WordPress</li>

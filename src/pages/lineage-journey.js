@@ -6,14 +6,20 @@ import Portfolio from "../components/Portfolio/portfolio"
 
 const LineageJourney = () => (
   <Layout>
-    <SEO title="Lineage Journey" />
+    <SEO 
+    title="Lineage Journey" 
+    description="Create a clean and modern user interface, increase the site performance and SEO, add new features and restruction the data, and create a mobile app"
+    />
     <Portfolio
-      projectName="Lineage Journey"
+      projectName="Lineage Journey (CURRENTLY IN PROGRESS"
+      projectCategory="UI/UX, Mobile, Front-end, CMS"
+      projectLink="https://lineagejourney.com"
       projectSummary="Plate App is a service for delivering your favorite food from restaurants on your mobile phone."
       bannerImage="/images/lineage-banner.png"
-      goalsContent="First of all, we developed a design system, so that all products of the company have a common style and adhere to the same rules in design. The interface has received significant improvements. Now the main functions have become more accessible, and thanks to the responsive design the site is convenient to use on any device."
+      goalsContent="Create a clean and modern user interface, increase the site performance and SEO, add new features and restruction the data, and create a mobile app"
       processImage="/images/lineage-process.png"
-      resultContent="First of all, we developed a design system, so that all products of the company have a common style and adhere to the same rules in design. The interface has received significant improvements. Now the main functions have become more accessible, and thanks to the responsive design the site is convenient to use on any device."
+      resultContent="This project is currently in progress and we expect to have it completed by December, 2020"
+      techUsed={["Figma", "Gatsby", "WordPress", "AWS Amplify", "React Native"]}
       nextPage="/jeewit-bachan"
     ></Portfolio>
   </Layout>

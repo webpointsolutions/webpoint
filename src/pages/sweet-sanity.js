@@ -9,11 +9,14 @@ const SweetSanity = () => (
     <SEO title="Sweet Sanity" />
     <Portfolio
       projectName="Sweet Sanity"
+      projectCategory="UI/UX, Front-end, CMS"
+      projectLink="https://www.sweetsanity.com/"
       projectSummary="Sweet sanity is a blog &amp; e-commerce store that aims to help people stay sane through change."
       bannerImage="/images/sweet-sanity-banner.png"
       goalsContent="The client needed a clean, bright modern desaign that focused on a blog with small shop."
       processImage="/images/sweet-sanity-process.png"
       resultContent="First of all, we developed a design system, so that all products of the company have a common style and adhere to the same rules in design. The interface has received significant improvements. Now the main functions have become more accessible, and thanks to the responsive design the site is convenient to use on any device."
+      techUsed={["Sketch", "HTML/CSS", "WordPress"]}
       nextPage="/angelholm-brand-guidelines"
     ></Portfolio>
   </Layout>

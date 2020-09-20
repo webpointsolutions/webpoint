@@ -4,11 +4,14 @@ import { Link } from "gatsby"
 
 const Portfolio = ({
   projectName,
+  projectCategory,
   projectSummary,
+  projectLink,
   bannerImage,
   goalsContent,
   processImage,
   resultContent,
+  techUsed,
   nextPage,
 }) => {
   return (
@@ -18,10 +21,10 @@ const Portfolio = ({
           <div className="col-lg-10 Portfolio_top" data-aos="fade-up">
             <ul>
               <li>{projectName}</li>
-              <li>UI/UX, Web, Development</li>
+              <li>{projectCategory}</li>
             </ul>
             <h1>{projectSummary}</h1>
-            <a href="#">Launch project</a>
+            {projectLink && <a href={projectLink}>Launch project</a>}
           </div>
           <div className="col-lg-12" data-aos="fade-up">
             <div className="Portfolio_banner">
@@ -44,10 +47,9 @@ const Portfolio = ({
                 <p>{resultContent}</p>
                 <h5>Technology used</h5>
                 <ul>
-                  <li>React</li>
-                  <li>CSS</li>
-                  <li>MongoDB</li>
-                  <li>Node</li>
+                  {techUsed?.map(tech => (
+                    <li>{tech}</li>
+                  ))}
                 </ul>
               </div>
             </div>

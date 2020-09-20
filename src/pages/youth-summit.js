@@ -9,22 +9,15 @@ const YouthSummit = () => (
     <SEO title="Youth Summit" />
     <Portfolio
       projectName="Youth Summit"
+      projectCategory="UI/UX, Front-end, CMS, E-Commerce"
+      projectLink="https://youthsummit.info"
       projectSummary="Plate App is a service for delivering your favorite food from
       restaurants on your mobile phone."
       bannerImage="/images/youth-summit-banner.png"
-      goalsContent="First of all, we developed a design system, so that all
-      products of the company have a common style and adhere to the
-      same rules in design. The interface has received significant
-      improvements. Now the main functions have become more
-      accessible, and thanks to the responsive design the site is
-      convenient to use on any device."
+      goalsContent="Create a complete branding, design, and website upgrade for HHES's youth scholarship program"
       processImage="/images/youth-summit-process.png"
-      resultContent="First of all, we developed a design system, so that all
-      products of the company have a common style and adhere to the
-      same rules in design. The interface has received significant
-      improvements. Now the main functions have become more
-      accessible, and thanks to the responsive design the site is
-      convenient to use on any device."
+      resultContent="The resulting design was much more attractive than other similar programs. The custom e-commerce functionality helped the program continue to run even during COVID-19"
+      techUsed={["Figma", "WordPress", "Elementor", "PHP"]}
       nextPage="/corniche"
     ></Portfolio>
   </Layout>

@@ -9,11 +9,13 @@ const AngelholmBrandGuidelines = () => (
     <SEO title="Angelholm Brand Guidelines" />
     <Portfolio
       projectName="Angelholm Brand Guidelines"
-      projectSummary="The Children’s Century Classics online provides subscription access to activities and companion audio books a children’s book set."
+      projectCategory="Graphic design, Branding"
+      projectSummary="Detailed and comprehensive deign and brand guidelines."
       bannerImage="/images/Angelholm-banner.png"
-      goalsContent="The previous version of the site had an outdated design and did not meet modern development requirements. Poor functionality, inconvenient navigation, lack of a responsive version - all this negatively affected users."
+      goalsContent="Create a universal template in a minimalist style for use in branding guidelines."
       processImage="/images/Angelholm-process.png"
-      resultContent="First of all, we developed a design system, so that all products of the company have a common style and adhere to the same rules in design. The interface has received significant improvements. Now the main functions have become more accessible, and thanks to the responsive design the site is convenient to use on any device."
+      resultContent="50 page universal template for quick and easy brand guide customization. The Angelholm Brand Guidelines cover all aspects of design including logo, color, type, web, social media, print, packaging and imagery."
+      techUsed={["Sketch", "Figma", "InDesign"]}
       nextPage="/home-health-education"
     ></Portfolio>
   </Layout>
