@@ -34,7 +34,10 @@ const Contact = () => {
                         maxLength="50"
                         required
                       />
-                      <span className="placeholder" data-placeholder="Email"></span>
+                      <span
+                        className="placeholder"
+                        data-placeholder="Email"
+                      ></span>
                     </div>
                   </div>
                   <div className="input-wrapper textarea-wrap">
@@ -56,15 +59,13 @@ const Contact = () => {
                       onChange={() => setChecked(!checked)}
                       required="required"
                     ></input>
-                    {checked && (
-                      <p style={{ color: "red" }}>
-                        ! Please checked this field
-                      </p>
-                    )}
                     <label for="checkbox">
                       <span></span>I have read and agree with{" "}
                       <Link to="/privacy-policy">Privacy Policy</Link>
                     </label>
+                    {checked && (
+                      <p className="error-msg">! Please checked this field</p>
+                    )}
                   </div>
                   <button>Send It</button>
                 </form>
