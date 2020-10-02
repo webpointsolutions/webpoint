@@ -5,6 +5,7 @@ import "./contact.scss"
 import { Link } from "gatsby"
 const Contact = () => {
   const [checked, setChecked] = React.useState(true)
+  const [submit, setSubmit] = React.useState(false)
   return (
     <Layout>
       <SEO title="Contact" />
@@ -63,11 +64,11 @@ const Contact = () => {
                       <span></span>I have read and agree with{" "}
                       <Link to="/privacy-policy">Privacy Policy</Link>
                     </label>
-                    {checked && (
-                      <p className="error-msg">! Please checked this field</p>
+                    {checked && submit && (
+                      <p className="error-msg">Please checked this field!</p>
                     )}
                   </div>
-                  <button>Send It</button>
+                  <button onClick={() => setSubmit(true)}>Send It</button>
                 </form>
                 <div className="contact-btm" data-aos="fade-up">
                   <p>or just write to us</p>
