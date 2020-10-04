@@ -14,7 +14,7 @@ const LineageJourney = () => (
       projectName="Lineage Journey (CURRENTLY IN PROGRESS"
       projectCategory="UI/UX, Mobile, Front-end, CMS"
       projectLink="https://lineagejourney.com"
-      projectSummary="Plate App is a service for delivering your favorite food from restaurants on your mobile phone."
+      projectSummary="Lineage is a multi-faceted educational tool that helps the user understand their spiritual heritage and explore the links between the past, present and future."
       bannerImage="/images/lineage-banner.png"
       goalsContent="Create a clean and modern user interface, increase the site performance and SEO, add new features and restruction the data, and create a mobile app"
       processImage="/images/lineage-process.png"
