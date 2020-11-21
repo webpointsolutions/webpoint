@@ -2,11 +2,28 @@ module.exports = {
   pathPrefix: "/webpoint",
 
   siteMetadata: {
-    title: `Webpoint`,
-    description: `description of site.`,
+    title: `Webpoint Solutions, LLC`,
+    description: `Webpoint is a full service web & mobile applications development company. We specialize in creating clean and modern UI/UX designs and web and app development.`,
     author: `@webpoint`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: "UA-140384533-1",
+        // Defines where to place the tracking script - `true` in the head and `false` in the body
+        head: true,
+        // Setting this parameter is also optional
+        respectDNT: true,
+        // Defers execution of google analytics script after page load
+        defer: true,
+        // Any additional optional fields
+        sampleRate: 5,
+        siteSpeedSampleRate: 10,
+        cookieDomain: "example.com",
+      },
+    },
     {
       resolve: "gatsby-plugin-sass",
       options: {
