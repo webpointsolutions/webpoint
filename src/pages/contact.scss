@@ -15,9 +15,25 @@
       font-size: 30px;
     }
   }
+  .form-body {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 100%;
+
+    div {
+      flex: 1;
+    }
+    .input-container {
+      display: flex;
+      flex-direction: column !important;
+
+    }
+  }
   .form-wrap {
-    max-width: 530px;
-    margin-left: 23vw;
+    // max-width: 530px;
+    // margin-left: 23vw;
     h3 {
       font-size: 26px;
       font-weight: 300;
@@ -53,8 +69,11 @@
       .input-wrapper {
         display: inline-block;
         position: relative;
+        margin: 25px 0 25px 0;
+        width: 85%;
         input,
         textarea {
+          width: 100%;
           &:valid + .placeholder {
             display: none;
           }
@@ -85,8 +104,8 @@
         }
       }
       .textarea-wrap {
-        margin-bottom: 21px;
-        margin-top: 59px;
+        // margin-bottom: 21px;
+        // margin-top: 59px;
         textarea {
           background: transparent;
           border: none;
@@ -185,12 +204,18 @@
       }
     }
     .contact-btm {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-end;
+      padding: 0 0 28px 15px;
+
       p {
         color: $black;
         font-size: 26px;
         line-height: 117.4%;
         margin-bottom: 20px;
-        margin-top: 100px;
+        // margin-top: 100px;
       }
       a {
         color: $textColor;
@@ -201,7 +226,7 @@
         transition: all ease 500ms;
         text-decoration: none;
         &:after {
-          border: 2px solid $textColor;
+          border: 1px solid $textColor;
           content: "";
           position: absolute;
           left: 0;
@@ -214,7 +239,7 @@
           color: $blue;
           transition: all ease 500ms;
           &:after {
-            border: 2px solid $blue;
+            border: 1px solid $blue;
             transition: all ease 500ms;
           }
         }

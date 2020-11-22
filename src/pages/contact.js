@@ -11,7 +11,7 @@ const Contact = () => {
       <SEO title="Contact" />
       <div className="container-fluid privacy-policy">
         <div className="row justify-content-center">
-          <div className="col-10">
+          <div className="col-md-8 col-lg-8 col-sm-10">
             <div className="contact">
               <h1 data-aos="fade-up">We’d like to work together</h1>
               <div className="form-wrap">
@@ -25,33 +25,44 @@ const Contact = () => {
                   method="POST"
                   data-aos="fade-up"
                 >
-                  <div className="d-flex justify-content-between">
-                    <input placeholder="Name" type="text" name="name" />
-                    <div className="input-wrapper">
-                      <input
-                        id="email"
-                        name="email"
-                        type="email"
-                        maxLength="50"
-                        required
-                      />
-                      <span
-                        className="placeholder"
-                        data-placeholder="Email"
-                      ></span>
+                  <div className="row">
+                    <div className="input-container col-md-6 col-sm-12">
+                      {/* <div className="d-flex justify-content-between"> */}
+                      <div className="input-wrapper">
+                        <input placeholder="Name" type="text" name="name" />
+                      </div>
+                      <div className="input-wrapper">
+                        <input
+                          id="email"
+                          name="email"
+                          type="email"
+                          maxLength="50"
+                          required
+                        />
+                        <span
+                          className="placeholder"
+                          data-placeholder="Email"
+                        ></span>
+                      </div>
+                      {/* </div> */}
+                      <div className="input-wrapper textarea-wrap">
+                        <textarea
+                          name="message"
+                          rows="1"
+                          cols="30"
+                          required
+                        ></textarea>
+                        <span
+                          className="placeholder"
+                          data-placeholder="Tell us about your project"
+                        ></span>
+                      </div>
                     </div>
-                  </div>
-                  <div className="input-wrapper textarea-wrap">
-                    <textarea
-                      name="message"
-                      rows="1"
-                      cols="30"
-                      required
-                    ></textarea>
-                    <span
-                      className="placeholder"
-                      data-placeholder="Tell us about your project"
-                    ></span>
+                    <div className="contact-btm col-md-6 col-sm-12" data-aos="fade-up">
+                      <p>or just write to us</p>
+                      <a href="mailto:sales@webpoint.io">sales@webpoint.io</a>
+                    </div>
+
                   </div>
                   <div className="round">
                     <input
@@ -70,10 +81,7 @@ const Contact = () => {
                   </div>
                   <button onClick={() => setSubmit(true)}>Send It</button>
                 </form>
-                <div className="contact-btm" data-aos="fade-up">
-                  <p>or just write to us</p>
-                  <a href="mailto:sales@webpoint.io">sales@webpoint.io</a>
-                </div>
+
               </div>
             </div>
           </div>
