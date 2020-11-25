@@ -20,7 +20,7 @@ import Footer from "./Footer/footer"
 import AOS from "aos"
 import "aos/dist/aos.css"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, hideFooter=false }) => {
   useEffect(() => {
     AOS.init({
       // Global settings:
@@ -50,7 +50,7 @@ const Layout = ({ children }) => {
 
       <div>
         <main>{children}</main>
-        <Footer />
+        {hideFooter?null:<Footer />}
       </div>
     </>
   )
