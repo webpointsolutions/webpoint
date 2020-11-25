@@ -29,6 +29,8 @@
         position: absolute;
         bottom: -5px;
         left: 0;
+        transform: scaleX(0);
+        transform-origin: left;
         transition: all ease 500ms;
         width: 100%;
       }
@@ -40,6 +42,12 @@
           transition: all ease 500ms;
         }
       }
+    }
+    .loaded-link {
+      &:after{
+        transform: scaleX(1);
+      }
+      
     }
     @include respond-above(sm) {
       h1 {

@@ -1,8 +1,16 @@
-import React from "react"
-import "./heroVideo.scss"
+import React, { useEffect, useState } from "react"
 import { Link } from "gatsby"
+import "./heroVideo.scss"
+const HeroVideo = () => {
+  const [loaded, setLoaded] = useState(false)
 
-const HeroVideo = () => (
+  useEffect(() => {
+    setTimeout(() => {
+      setLoaded(true)
+    }, 1200)
+  }, [])
+
+  return (
   <section data-aos="fade-up" className="HeroVideo">
     <div className="container-fluid">
       <div className="row justify-content-center">
@@ -13,7 +21,7 @@ const HeroVideo = () => (
               company
             </h1>
             <div data-aos="fade-up" data-aos-duration="1000">
-              <Link to="/contact">Let’s work together</Link>
+            <Link to="/contact" className={loaded?"loaded-link":""}>Let’s work together</Link>
             </div>
           </div>
         </div>
@@ -39,6 +47,6 @@ const HeroVideo = () => (
       </div>
     </div>
   </section>
-)
+)}
 
 export default HeroVideo
