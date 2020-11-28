@@ -10,7 +10,7 @@ const SplashScreen = ({ children, onAnimCompleted }) => {
     useEffect(() => {
         setTimeout(() => {
             setFade(true)
-        }, 10000)
+        }, 2000)
     }, [])
 
     useEffect(() => {
@@ -18,7 +18,7 @@ const SplashScreen = ({ children, onAnimCompleted }) => {
             setTimeout(() => {
                 setLoaded(true)
                 onAnimCompleted()
-            }, 300)
+            }, 500)
         }
     }, [fade])
 
@@ -26,7 +26,7 @@ const SplashScreen = ({ children, onAnimCompleted }) => {
     return (
         <div>
             {loaded ? children :
-                <div className={`anim-container ${fade && "fade"}`}>
+                <div className={`anim-container ${fade? "fade":""}`}>
                     <Lottie
                         eventListeners={[
                             {
