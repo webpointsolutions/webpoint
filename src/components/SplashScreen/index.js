@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Lottie from 'lottie-react-web'
 import animation from '../../../static/json/splashAnim.json'
 import './style.scss'
@@ -10,7 +10,7 @@ const SplashScreen = ({ children, onAnimCompleted }) => {
     useEffect(() => {
         setTimeout(() => {
             setFade(true)
-        }, 1000)
+        }, 10000)
     }, [])
 
     useEffect(() => {
