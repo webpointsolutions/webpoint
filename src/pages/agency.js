@@ -7,7 +7,7 @@ import AgencySlider from "../components/AgencySlider/agencySlider"
 
 const Agnecy = () => (
   <Layout>
-    <SEO title="Agnecy" />
+    <SEO title="Agency" />
     <div className="container-fluid Agency">
       <div className="row justify-content-center">
         <div className="col-10">
