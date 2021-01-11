@@ -17,8 +17,7 @@ const HeroVideo = () => {
         <div className="col-lg-10">
           <div className="HeroVideo_text">
             <h1 data-aos="fade-up" data-aos-duration="800">
-              We are a full service web &amp; mobile applications development
-              company
+              Your Web & Mobile App Development Partner - Empowered By Innovation 
             </h1>
             <div data-aos="fade-up" data-aos-duration="1000">
             <Link to="/contact" className={loaded?"loaded-link":""}>Let’s work together</Link>
