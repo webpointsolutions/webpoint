@@ -6,9 +6,9 @@ import Portfolio from "../../components/Portfolio/portfolio"
 
 const HomeHealthEducation = () => (
   <Layout>
-    <SEO title="Home Health Education" />
+    <SEO title="Home Health Education Service" />
     <Portfolio
-      projectName="Home Health Education"
+      projectName="Home Health Education Service"
       projectCategory="UI/UX, Front-end, PWA, Custom API"
       projectSummary="HHES has a network of independent sales representatives who needed a platform to view their customer’s information, payment history, location, receive deliquency alerts, and receive new leads."
       bannerImage="/images/hhes-banner.png"

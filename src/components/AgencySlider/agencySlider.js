@@ -54,19 +54,19 @@ export default function AgencySlider() {
             ref={slider => (slider1 = slider)}
           >
             <div key={1}>
-              <img src="/images/banner-1.png" alt="" />
+              <img src="/images/banner-1.png" alt="Project 1" />
             </div>
             <div key={2}>
-              <img src="/images/banner-2.png" alt="" />
+              <img src="/images/banner-2.png" alt="Project 2" />
             </div>
             <div key={3}>
-              <img src="/images/banner-3.png" alt="" />
+              <img src="/images/banner-3.png" alt="Project 3" />
             </div>
             <div key={4}>
-              <img src="/images/banner-4.png" alt="" />
+              <img src="/images/banner-4.png" alt="Project 4" />
             </div>
             <div key={5}>
-              <img src="/images/banner-5.png" alt="" />
+              <img src="/images/banner-5.png" alt="Project 5" />
             </div>
           </Slider>
           <button

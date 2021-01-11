@@ -1,26 +1,31 @@
-import React, { useState } from "react"
-// import { createPortal } from 'react-dom'
+import React from "react"
 import '../../static/css/wordpress.scss'
+import ContactForm from "../components/ContactForm/contactForm"
+import Footer from "../components/Footer/footer"
+import Header from "../components/Header/header"
+import SEO from "../components/seo"
 
-const HtmlComponent = () => {
+const Wordpress = () => {
     return (
-        <div>
+        <>
+        <Header />
+        <SEO title="WordPress Design" description="We are your WordPress expterts! We built beautiful custom WordPress websites. "/>
             <section className="wordpress-hero" >
             <div className="container-fluid">
                 <div className="row justify-content-center">
                     <div className="col-lg-10">
                         <div className="wp-header_text">
-                            <p>
-                                We build beautify custom WordPress websites.
-                            </p>
+                            <h1>
+                                Your One-Stop Solution For Beautiful Custom Wordpress Websites.
+                            </h1>
                         </div>
                         <div className="wp-link">
-                            <a href="">Let's Start</a>
+                            <a href="#contact-form">Let's Start</a>
                         </div>
                     </div>
                 </div>
             </div>
-            </section>
+        </section>
 
         <section className="wp-services">
             <div className="container-fluid">
@@ -30,10 +35,8 @@ const HtmlComponent = () => {
                             <h2>Services</h2>
                         </div>
                         <div className="services-info-text">
-                            <p>We provide a wide range of services to meet 
-                                whatever needs you have.</p>
+                            <p>We provide a wide range of services for your website needs, to meet your conversionalgoals.</p>
                         </div>
-                    
                     </div>
                     <div className="col-lg-6">
                         <div className="row">
@@ -42,7 +45,7 @@ const HtmlComponent = () => {
 
                         
                                     <div className="wp-services-bg">
-                                        <img src="./static/images/logo-thunder-bolt.svg " alt="Speed Optimization"/>
+                                        <img src="/images/speed-optimization.svg " alt="Speed Optimization"/>
                                         <h2>Speed Optimization</h2>
                                     </div>
                                 </div>
@@ -51,7 +54,7 @@ const HtmlComponent = () => {
                             <div className="col-md-4">
                                 <div className="wp-services-container">
                                     <div className="wp-services-bg">
-                                        <img src="./static/images/logo-woo-commerce.svg " alt="WooCommerce"/>
+                                        <img src="/images/woocommerce.svg" alt="WooCommerce"/>
                                         <h2>WooCommerce</h2> 
                                     </div>
                                 </div>
@@ -59,7 +62,7 @@ const HtmlComponent = () => {
                             <div className="col-md-4 ">
                                 <div className="wp-services-container">
                                     <div className="wp-services-bg">
-                                        <img src="./static/images/logo-api.svg " alt="API Integrations"/>
+                                        <img src="/images/api-integration.svg" alt="API Integrations"/>
                                         <h2>API Integrations</h2>   
                                     </div>
                                 </div>
@@ -68,21 +71,21 @@ const HtmlComponent = () => {
                         <div className="row">
                             <div className="col-md-4">
                                 <div className="wp-services-bg">
-                                    <img src="./static/images/logo-monitor.svg " alt="Custom Theme"/>
+                                    <img src="/images/custom-theme.svg " alt="Custom Theme"/>
                                     <h2>Custom Theme</h2>
                                 </div>
                             
                             </div>
                             <div className="col-md-4">
                                 <div className="wp-services-bg">
-                                    <img src="./static/images/logo-plugins.svg " alt="Custom Plugins"/>
+                                    <img src="/images/custom-plugin.svg" alt="Custom Plugins"/>
                                     <h2>Custom Plugins</h2> 
                                 </div>
                             
                             </div>
                             <div className="col-md-4">
                                 <div className="wp-services-bg">
-                                    <img src="./static/images/logo-settings.svg " alt="Monthly Maintenance"/>
+                                    <img src="/images/monthly-maintenance.svg" alt="Monthly Maintenance"/>
                                     <h2>Monthly Maintenance</h2>  
                                 </div>
                             
@@ -93,7 +96,7 @@ const HtmlComponent = () => {
                 <div className="row justify-content-center" >
                     <div className="col-lg-10">
                         <div className="services-learn-more">
-                            <a href="">Let's Start</a>
+                            <a href="#contact-form">Let's Start</a>
                         </div>
                     </div>
                 </div>
@@ -109,21 +112,21 @@ const HtmlComponent = () => {
                             <div className="portfolio-text">
                                 <h1>Portfolio</h1>
                             </div>
-                           </div>
-                           <div className="col-md-6">
+                        </div>
+                        <div className="col-md-6">
                             <div className="portfolio-link">
-                                <a href="">view all work</a>
+                                <a href="/work/">View All Work</a>
                             </div>
-                           </div>
+                        </div>
                     </div>
                     <div className="row">
                      <div className="col-lg-6">
                          <div className="work-services-1">
                              <div className="work-services-img1">
-                                 <img src="/static/images/portfolio-youth-summit.svg" alt="portfolio" className="img-fluid" />
+                                 <img src="/images/portfolio-youth-summit.svg" alt="portfolio" className="img-fluid" />
                                  <div className="work-services-title">
                                     <h2>Youth Summit</h2>
-                                    <p>UX/UI,Mobile,Front-end,Back-end</p>
+                                    <p>UX/UI, Mobile, Front-end, Back-end</p>
                                 </div>
                              </div>
                            
@@ -133,22 +136,18 @@ const HtmlComponent = () => {
                          <div className="work-services-2">
                              <div className="work-services-img2">
                                 <div className="work-services-images1">
-                                <img src="/static/images/portfolio-chronicle-watechs2.svg" alt="portfolio" className="img-fluid" />
+                                <img src="/images/portfolio-chronicle-watechs2.svg" alt="portfolio" className="img-fluid" />
                                 </div>
                                 <div className="work-services-images2">
-                                    <img src="/static/images/portfolio-chronicle-watechs1.svg" alt="portfolio" className="img-fluid" />
-                                   
-                                </div>
-                               
-                                
+                                    <img src="/images/portfolio-chronicle-watechs1.svg" alt="portfolio" className="img-fluid" />
+                                </div>        
                              </div>
                              <div className="work-services-title">
                                 <h2>Corniche Watches</h2>
-                                <p>UX/UI,Front-end,Back-end</p>
+                                <p>UX/UI, Front-end, Back-end</p>
                             </div>
                          </div>
                      </div>
-
                     </div>
                 </div>
             </div>
@@ -204,7 +203,7 @@ const HtmlComponent = () => {
                             </ul>
                         </div>
                         <div className="package-info-btn">
-                            <a href="">Let's Start</a>
+                            <a href="#contact-form">Let's Start</a>
                         </div>
                     </div>
                 </div>
@@ -226,7 +225,7 @@ const HtmlComponent = () => {
                             </ul>
                         </div>
                         <div className="package-info-btn">
-                            <a href="#">Let's Start</a>
+                            <a href="#contact-form">Let's Start</a>
                         </div>
                     </div>
                 </div>
@@ -248,79 +247,27 @@ const HtmlComponent = () => {
                             </ul>
                         </div>
                         <div className="package-info-btn">
-                            <a href="">Let's Start</a>
+                            <a href="#contact-form">Let's Start</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section className="wp-privacy-policy">
+    <section id="contact-form" className="wp-privacy-policy">
         <div className="container-fluid">
             <div className="row justify-content-center">
                 <div className="col-lg-12">
                     <div className="contact-form">
-                        <h1>Drop us a line</h1>
+                        <h1>Get in Touch</h1>
                     </div>
+                    <ContactForm />
                 </div>
-        
             </div>
-         
-
-            
-            <div className="row justify-content-center">
-                
-                <div className="wp-input-wrapper col-md-5 col-sm-12">
-                 <div className="wp-input-container">
-                    <input placeholder="Name" type="text" name="name"/>
-                    <input id="email" name="email" type="email" maxlength="50" required="" placeholder="Email" />
-                  
-                    <div className="wp-input-textarea ">
-                        <textarea name="message" rows="1" cols="30" required="" placeholder="Tell us about your project"></textarea>
-                        
-                </div>
-                 </div>
-                </div>
-                
-
-               
-                <div className="wp-contact-bottom col-md-5 col-sm-12" >
-                    <p>or just write to us</p>
-                    <div className="sales-webpoint">
-                        <a href="mailto:sales@webpoint.io">sales@webpoint.io</a>
-                    </div>
-                 
-                </div>
-           
-            </div>
-            <div className="row justify-content-center">
-                <div className="col-lg-10 col-md-10">
-            <div className="round-radio">
-                
-                <label for="radioid" className="radio">
-                    <input type="radio" id="radioid" required="" className="radio__input" />
-               
-                    <div className="radio__radio"></div>
-                     I have read and agree with 
-                    <a href="/privacy-policy">Privacy Policy.</a>
-                </label>
-               
-            </div>
-            <button>Send It</button>
         </div>
-        </div>
-    
-</div>
     </section>
-</div>
+    <Footer />
+</>
     )
 }
-export default (props) => {
-    const [contentRef, setContentRef] = useState(null)
-    const mountNode =
-        contentRef?.contentWindow?.document?.body
-    const parseHtml = html => new DOMParser().parseFromString(html, 'text/html').body.innerText;
-    return (
-        <HtmlComponent />
-    )
-}
+export default Wordpress

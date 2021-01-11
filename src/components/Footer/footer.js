@@ -10,7 +10,7 @@ const Footer = () => (
         <div className="col-lg-10 d-flex sm-column">
           <div className="footer_left">
             <span className="footer_left_title">Contact us</span>
-            <a href="#" className="footer_left_link">
+            <a href="/contact/" className="footer_left_link">
               Let’s work together
             </a>
           </div>
@@ -41,7 +41,7 @@ const Footer = () => (
           </div>
         </div>
         <div className="col-lg-10 footer_bottom">
-          <span>© 2020 WebPoint Solutions, LLC</span>
+          <span>©{new Date().getFullYear()} WebPoint Solutions, LLC</span>
           <Link to="/privacy-policy">Privacy Policy</Link>
         </div>
       </div>
