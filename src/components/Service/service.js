@@ -12,12 +12,12 @@ const Service = () => {
       <div className="container-fluid">
         <div className="row justify-content-center">
           <div className="col-lg-10 d-flex sm-column">
-            <span className="section-title" data-aos="fade-up">
+            <h2 className="section-title" data-aos="fade-up">
               Our Sevices
-            </span>
+            </h2>
             <div className="Services_list" data-aos="fade-up">
               <div className="Services_list_wrap">
-                <span
+                <h3
                   className="Services_list_title"
                   onClick={() => {
                     setDesign(!design)
@@ -29,7 +29,7 @@ const Service = () => {
                   }
                 >
                   Design
-                </span>
+                </h3>
                 <ul
                   className={
                     design
@@ -44,7 +44,7 @@ const Service = () => {
                 </ul>
               </div>
               <div className="Services_list_wrap">
-                <span
+                <h3
                   className="Services_list_title"
                   onClick={() => {
                     sevtDevelopment(!development)
@@ -56,7 +56,7 @@ const Service = () => {
                   }
                 >
                   Development
-                </span>
+                </h3>
                 <ul
                   className={
                     development
@@ -73,7 +73,7 @@ const Service = () => {
                 </ul>
               </div>
               <div className="Services_list_wrap">
-                <span
+                <h3
                   className="Services_list_title"
                   onClick={() => {
                     setEcommerce(!ecommerce)
@@ -85,7 +85,7 @@ const Service = () => {
                   }
                 >
                   E-Commerce
-                </span>
+                </h3>
                 <ul
                   className={
                     ecommerce
@@ -101,7 +101,7 @@ const Service = () => {
                 </ul>
               </div>
               <div className="Services_list_wrap">
-                <span
+                <h3
                   className="Services_list_title"
                   onClick={() => {
                     setContent(!content)
@@ -113,7 +113,7 @@ const Service = () => {
                   }
                 >
                   Content
-                </span>
+                </h3>
                 <ul
                   className={
                     content
