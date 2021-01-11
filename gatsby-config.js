@@ -47,6 +47,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-force-trailing-slashes`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -59,13 +60,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Webpoint`,
-        short_name: `webponts`,
+        name: `Webpoint Solutions`,
+        short_name: `webpoint`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `static/images/Subtract.png`, // This path is relative to the root of the site.
+        icon: `static/images/icon-blue.svg`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-scroll-reveal`,
