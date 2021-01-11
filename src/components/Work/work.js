@@ -65,7 +65,7 @@ const Work = () => (
             <div className="col-md-6 col-sm-12">
               <Link to="/work/youth-summit" className="Work_list" data-aos="fade-up">
                 <div className="media-container">
-                  <img src="/images/Youth-Summit.png" alt="" />
+                  <img src="/images/Youth-Summit.png" alt="Youth Summit" />
                   <span className="open-case">
                     open <br />
                     case
@@ -82,7 +82,7 @@ const Work = () => (
                 data-aos="fade-up"
               >
                 <div className="media-container">
-                  <img src="/images/Children's-Century.png" alt="" />
+                  <img src="/images/Children's-Century.png" alt="Children's Century Classics" />
                   <span className="open-case">
                     open <br />
                     case
@@ -97,7 +97,7 @@ const Work = () => (
               </Link>
               <Link to="/work/fhcb" className="Work_list" data-aos="fade-up">
                 <div className="media-container">
-                  <img src="/images/Family-Home-Christian-Books.png" alt="" />
+                  <img src="/images/Family-Home-Christian-Books.png" alt="Family Home Christian Books" />
                   <span className="open-case">
                     open <br />
                     case
@@ -114,7 +114,7 @@ const Work = () => (
             <div className="col-md-6 col-sm-12 mt185">
               <Link to="/work/corniche" className="Work_list" data-aos="fade-up">
                 <div className="media-container">
-                  <img src="/images/Corniche-Watches.png" alt="" />
+                  <img src="/images/Corniche-Watches.png" alt="Corniche Watches" />
                   <span className="open-case">
                     open <br />
                     case
@@ -125,13 +125,13 @@ const Work = () => (
                   UI/UX, Fron-end, CMS
                 </div>
               </Link>
-              <Link
+              {/* <Link
                 to="/work/strategy-prep"
                 className="Work_list"
                 data-aos="fade-up"
               >
                 <div className="media-container">
-                  <img src="/images/LSAT-Preparation.png" alt="" />
+                  <img src="/images/LSAT-Preparation.png" alt="LSAT Preparation" />
                   <span className="open-case">
                     open <br />
                     case
@@ -141,14 +141,14 @@ const Work = () => (
                 <div className="Work_list_description">
                   UI/UX Design
                 </div>
-              </Link>
+              </Link> */}
               <Link
                 to="/work/plate-app"
                 className="Work_list mb123"
                 data-aos="fade-up"
               >
                 <div className="media-container">
-                  <img src="/images/Plate-App.png" alt="" />
+                  <img src="/images/Plate-App.png" alt="Plate App" />
                   <span className="open-case">
                     open <br />
                     case
@@ -159,10 +159,12 @@ const Work = () => (
                   UI/UX, Mobile, CMS
                 </div>
               </Link>
-              <Link to="/work" className="see_more">
-                See more works
-              </Link>
             </div>
+          </div>
+          <div className="row">
+            <Link to="/work" className="see_more">
+                  See more works
+            </Link>
           </div>
         </div>
       </div>

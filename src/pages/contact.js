@@ -8,7 +8,7 @@ const Contact = () => {
   const [submit, setSubmit] = React.useState(false)
   return (
     <Layout>
-      <SEO title="Contact" />
+      <SEO title="Contact" description="Have an idea? Tell us about it. We can't wait to partner with you on your next project!"/>
       <div className="container-fluid privacy-policy">
         <div className="row justify-content-center">
           <div className="col-md-8 col-lg-8 col-sm-10">

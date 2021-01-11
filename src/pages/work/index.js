@@ -7,7 +7,7 @@ import "./work.scss"
 
 const Work = () => (
   <Layout>
-    <SEO title="Work" />
+    <SEO title="Our Work Portfolio" />
     <section className="Work work-inner">
       <div className="container-fluid">
         <div className="row justify-content-center">
@@ -22,7 +22,7 @@ const Work = () => (
                     data-aos="fade-up"
                   >
                     <div className="media-container">
-                      <img src="/images/Youth-Summit.png" alt="" />
+                      <img src="/images/Youth-Summit.png" alt="Youth Summit" />
                       <span className="open-case">
                         open <br />
                         case
@@ -39,7 +39,7 @@ const Work = () => (
                     data-aos="fade-up"
                   >
                     <div className="media-container">
-                      <img src="/images/Lineage-Journey.png" alt="" />
+                      <img src="/images/Lineage-Journey.png" alt="Lineage Journey" />
                       <span className="open-case">
                         open <br />
                         case
@@ -54,7 +54,7 @@ const Work = () => (
                     <div className="media-container">
                       <img
                         src="/images/Family-Home-Christian-Books.png"
-                        alt=""
+                        alt="Family Home Christian Books"
                       />
                       <span className="open-case">
                         open <br />
@@ -74,7 +74,7 @@ const Work = () => (
                     data-aos="fade-up"
                   >
                     <div className="media-container">
-                      <img src="/images/Children's-Century.png" alt="" />
+                      <img src="/images/Children's-Century.png" alt="Children's Century Classics" />
                       <span className="open-case">
                         open <br />
                         case
@@ -93,7 +93,7 @@ const Work = () => (
                     data-aos="fade-up"
                   >
                     <div className="media-container">
-                      <img src="/images/Sweet-Sanity.png" alt="" />
+                      <img src="/images/Sweet-Sanity.png" alt="Sweet Sanity" />
                       <span className="open-case">
                         open <br />
                         case
@@ -112,7 +112,7 @@ const Work = () => (
                     <div className="media-container">
                       <img
                         src="/images/Home-Health-Education-Service.png"
-                        alt=""
+                        alt="Home Health Education Service"
                       />
                       <span className="open-case">
                         open <br />
@@ -132,7 +132,7 @@ const Work = () => (
                     data-aos="fade-up"
                   >
                     <div className="media-container">
-                      <img src="/images/Reach-Nepal.png" alt="" />
+                      <img src="/images/Reach-Nepal.png" alt="Reach Nepal" />
                       <span className="open-case">
                         open <br />
                         case
@@ -147,7 +147,7 @@ const Work = () => (
                 <div className="col-md-6 col-sm-12 mt185">
                   <Link to="/work/corniche" className="Work_list" data-aos="fade-up">
                     <div className="media-container">
-                      <img src="/images/Corniche-Watches.png" alt="" />
+                      <img src="/images/Corniche-Watches.png" alt="Corniche Watches" />
                       <span className="open-case">
                         open <br />
                         case
@@ -164,7 +164,7 @@ const Work = () => (
                     data-aos="fade-up"
                   >
                     <div className="media-container">
-                      <img src="/images/Jeewit-Bachan.png" alt="" />
+                      <img src="/images/Jeewit-Bachan.png" alt="Jeewit Bachan" />
                       <span className="open-case">
                         open <br />
                         case
@@ -183,7 +183,7 @@ const Work = () => (
                     data-aos="fade-up"
                   >
                     <div className="media-container">
-                      <img src="/images/Plate-App.png" alt="" />
+                      <img src="/images/Plate-App.png" alt="Plate App" />
                       <span className="open-case">
                         open <br />
                         case
@@ -194,13 +194,13 @@ const Work = () => (
                       UI/UX, Mobile, Custom API
                     </div>
                   </Link>
-                  <Link
+                  {/* <Link
                     to="/work/strategy-prep"
                     className="Work_list"
                     data-aos="fade-up"
                   >
                     <div className="media-container">
-                      <img src="/images/LSAT-Preparation.png" alt="" />
+                      <img src="/images/LSAT-Preparation.png" alt="LSAT Preparation" />
                       <span className="open-case">
                         open <br />
                         case
@@ -210,14 +210,14 @@ const Work = () => (
                     <div className="Work_list_description">
                       UI/UX Design
                     </div>
-                  </Link>
+                  </Link> */}
                   <Link
                     to="/work/angelholm-brand-guidelines"
                     className="Work_list"
                     data-aos="fade-up"
                   >
                     <div className="media-container">
-                      <img src="/images/Angelholm.png" alt="" />
+                      <img src="/images/Angelholm.png" alt="Angelholm Brand Guidlines" />
                       <span className="open-case">
                         open <br />
                         case
@@ -236,7 +236,7 @@ const Work = () => (
                     data-aos="fade-up"
                   >
                     <div className="media-container">
-                      <img src="/images/Annual-Report.png" alt="" />
+                      <img src="/images/Annual-Report.png" alt="Annual Report" />
                       <span className="open-case">
                         open <br />
                         case
@@ -249,7 +249,7 @@ const Work = () => (
                   </Link>
                   <Link to="/work/cryptox" className="Work_list" data-aos="fade-up">
                     <div className="media-container">
-                      <img src="/images/Cryptox.png" alt="" />
+                      <img src="/images/Cryptox.png" alt="Cryptox" />
                       <span className="open-case">
                         open <br />
                         case

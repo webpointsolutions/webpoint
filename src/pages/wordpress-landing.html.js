@@ -42,7 +42,7 @@ const HtmlComponent = () => {
 
                         
                                     <div className="wp-services-bg">
-                                        <img src="./static/images/logo-thunder-bolt.svg " alt=""/>
+                                        <img src="./static/images/logo-thunder-bolt.svg " alt="Speed Optimization"/>
                                         <h2>Speed Optimization</h2>
                                     </div>
                                 </div>
@@ -51,16 +51,15 @@ const HtmlComponent = () => {
                             <div className="col-md-4">
                                 <div className="wp-services-container">
                                     <div className="wp-services-bg">
-                                        <img src="./static/images/logo-woo-commerce.svg " alt=""/>
-                                        <h2>Woo
-                                            Commerce</h2> 
+                                        <img src="./static/images/logo-woo-commerce.svg " alt="WooCommerce"/>
+                                        <h2>WooCommerce</h2> 
                                     </div>
                                 </div>
                             </div>
                             <div className="col-md-4 ">
                                 <div className="wp-services-container">
                                     <div className="wp-services-bg">
-                                        <img src="./static/images/logo-api.svg " alt=""/>
+                                        <img src="./static/images/logo-api.svg " alt="API Integrations"/>
                                         <h2>API Integrations</h2>   
                                     </div>
                                 </div>
@@ -69,21 +68,21 @@ const HtmlComponent = () => {
                         <div className="row">
                             <div className="col-md-4">
                                 <div className="wp-services-bg">
-                                    <img src="./static/images/logo-monitor.svg " alt=""/>
+                                    <img src="./static/images/logo-monitor.svg " alt="Custom Theme"/>
                                     <h2>Custom Theme</h2>
                                 </div>
                             
                             </div>
                             <div className="col-md-4">
                                 <div className="wp-services-bg">
-                                    <img src="./static/images/logo-plugins.svg " alt=""/>
+                                    <img src="./static/images/logo-plugins.svg " alt="Custom Plugins"/>
                                     <h2>Custom Plugins</h2> 
                                 </div>
                             
                             </div>
                             <div className="col-md-4">
                                 <div className="wp-services-bg">
-                                    <img src="./static/images/logo-settings.svg " alt=""/>
+                                    <img src="./static/images/logo-settings.svg " alt="Monthly Maintenance"/>
                                     <h2>Monthly Maintenance</h2>  
                                 </div>
                             

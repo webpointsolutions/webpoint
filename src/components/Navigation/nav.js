@@ -18,7 +18,7 @@ const Navigation = ({ menu, menuToggle }) => (
           <img
             className="close"
             src="/images/close.svg"
-            alt=""
+            alt="close"
             onClick={menuToggle}
           />
         </div>
@@ -30,17 +30,17 @@ const Navigation = ({ menu, menuToggle }) => (
               </Link>
             </li>
             <li>
-              <Link activeClassName="active" to="/agency">
+              <Link activeClassName="active" to="/agency/">
                 Agency
               </Link>
             </li>
             <li>
-              <Link activeClassName="active" to="/work">
+              <Link activeClassName="active" to="/work/">
                 Work
               </Link>
             </li>
             <li>
-              <Link activeClassName="active" to="/contact">
+              <Link activeClassName="active" to="/contact/">
                 Contact
               </Link>
             </li>

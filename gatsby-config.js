@@ -2,8 +2,8 @@ module.exports = {
   pathPrefix: "/webpoint",
 
   siteMetadata: {
-    title: `Digital Creation Agency`,
-    description: `Webpoint is a full service web & mobile applications development company. We specialize in creating clean and modern UI/UX designs and web and app development.`,
+    title: `Webpoint`,
+    description: `Webpoint is a leading web and mobile applications development company. We create beautiful UI/UX designs and engaging user experiences.`,
     author: `@webpoint`,
   },
   plugins: [

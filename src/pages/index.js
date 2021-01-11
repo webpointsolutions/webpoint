@@ -37,7 +37,7 @@ const IndexPage = () => {
       <SplashScreen onAnimCompleted={() => {
         setAnimCompleted(true)
       }}>
-        <SEO title="Website Design & Development | App Development - Atlanta" description="Webpoint is a leading web and mobile applications development company. We create beautiful UI/UX designs and engaging user experiences" schemaMarkup={schema}/>
+        <SEO title="Website Design & Development | App Development" schemaMarkup={schema}/>
         <HeroVideo />
         <Service />
         <Work />

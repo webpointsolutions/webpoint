@@ -13,7 +13,7 @@ const PrivacyPolicy = () => (
           <div className="privacy-policy-wrap">
             <h1 data-aos="fade-up">Privacy Policy</h1>
             <p data-aos="fade-up">
-              WebPoint Solutions LLC (https://webpoint.io./) is committed to
+              WebPoint Solutions LLC (https://webpoint.io/) is committed to
               protecting the privacy of all of our website visitors. In this
               privacy policy, you can familiarize yourself with the different
               kinds of information that we collect and how we use it. If you
@@ -79,7 +79,7 @@ const PrivacyPolicy = () => (
               knowingly collect any Personal Identifiable Information from
               children under the age of 13. However, if you suspect that your
               child provided this kind of identifiable information on our
-              https://webpoint.io./, then please, contact us ASAP! We will
+              https://webpoint.io/, then please, contact us ASAP! We will
               gladly and promptly remove any such information from our records
               if it has been acquired.{" "}
             </p>
@@ -92,7 +92,7 @@ const PrivacyPolicy = () => (
             </p>
             <h3 data-aos="fade-up">Consent</h3>
             <p data-aos="fade-up">
-              By using https://webpoint.io./, you are consenting to the terms
+              By using https://webpoint.io/, you are consenting to the terms
               and conditions set forth in this privacy policy.
             </p>
           </div>
