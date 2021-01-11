@@ -17,6 +17,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://webpoint.io`,
+      },
+    },
+    {
       resolve: "gatsby-plugin-sass",
       options: {
         data: `@import "${__dirname}/static/css/variables";`,

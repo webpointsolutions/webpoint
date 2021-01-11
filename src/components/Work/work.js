@@ -7,9 +7,9 @@ const Work = () => (
     <div className="container-fluid">
       <div className="row justify-content-center">
         <div className="col-lg-10">
-          <span className="section-title" data-aos="fade-up">
+          <h2 className="section-title" data-aos="fade-up">
             Our Work
-          </span>
+          </h2>
           <Link to="/lineage-journey" className="Work_list" data-aos="fade-up">
             <video
               muted
