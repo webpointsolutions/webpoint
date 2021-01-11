@@ -1,7 +1,7 @@
 import React from "react"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../../components/layout"
+import SEO from "../../components/seo"
 import { Link } from "gatsby"
 import "./work.scss"
 
@@ -17,7 +17,7 @@ const Work = () => (
               <div className="row">
                 <div className="col-md-6 col-sm-12">
                   <Link
-                    to="/youth-summit"
+                    to="/work/youth-summit"
                     className="Work_list"
                     data-aos="fade-up"
                   >
@@ -34,7 +34,7 @@ const Work = () => (
                     </div>
                   </Link>
                   <Link
-                    to="/lineage-journey"
+                    to="/work/lineage-journey"
                     className="Work_list"
                     data-aos="fade-up"
                   >
@@ -50,7 +50,7 @@ const Work = () => (
                       UI/UX, Mobile, Front-end, CMS
                     </div>
                   </Link>
-                  <Link to="/fhcb" className="Work_list" data-aos="fade-up">
+                  <Link to="/work/fhcb" className="Work_list" data-aos="fade-up">
                     <div className="media-container">
                       <img
                         src="/images/Family-Home-Christian-Books.png"
@@ -69,7 +69,7 @@ const Work = () => (
                     </div>
                   </Link>
                   <Link
-                    to="/childrens-century-classics"
+                    to="/work/childrens-century-classics"
                     className="Work_list"
                     data-aos="fade-up"
                   >
@@ -88,7 +88,7 @@ const Work = () => (
                     </div>
                   </Link>
                   <Link
-                    to="/sweet-sanity"
+                    to="/work/sweet-sanity"
                     className="Work_list"
                     data-aos="fade-up"
                   >
@@ -105,7 +105,7 @@ const Work = () => (
                     </div>
                   </Link>
                   <Link
-                    to="/home-health-education"
+                    to="/work/home-health-education"
                     className="Work_list"
                     data-aos="fade-up"
                   >
@@ -127,7 +127,7 @@ const Work = () => (
                     </div>
                   </Link>
                   <Link
-                    to="/reach-nepal"
+                    to="/work/reach-nepal"
                     className="Work_list"
                     data-aos="fade-up"
                   >
@@ -145,7 +145,7 @@ const Work = () => (
                   </Link>
                 </div>
                 <div className="col-md-6 col-sm-12 mt185">
-                  <Link to="/corniche" className="Work_list" data-aos="fade-up">
+                  <Link to="/work/corniche" className="Work_list" data-aos="fade-up">
                     <div className="media-container">
                       <img src="/images/Corniche-Watches.png" alt="" />
                       <span className="open-case">
@@ -159,7 +159,7 @@ const Work = () => (
                     </div>
                   </Link>
                   <Link
-                    to="/jeewit-bachan"
+                    to="/work/jeewit-bachan"
                     className="Work_list"
                     data-aos="fade-up"
                   >
@@ -178,7 +178,7 @@ const Work = () => (
                     </div>
                   </Link>
                   <Link
-                    to="/plate-app"
+                    to="/work/plate-app"
                     className="Work_list mb123"
                     data-aos="fade-up"
                   >
@@ -195,7 +195,7 @@ const Work = () => (
                     </div>
                   </Link>
                   <Link
-                    to="/strategy-prep"
+                    to="/work/strategy-prep"
                     className="Work_list"
                     data-aos="fade-up"
                   >
@@ -212,7 +212,7 @@ const Work = () => (
                     </div>
                   </Link>
                   <Link
-                    to="/angelholm-brand-guidelines"
+                    to="/work/angelholm-brand-guidelines"
                     className="Work_list"
                     data-aos="fade-up"
                   >
@@ -231,7 +231,7 @@ const Work = () => (
                     </div>
                   </Link>
                   <Link
-                    to="/annual-report"
+                    to="/work/annual-report"
                     className="Work_list"
                     data-aos="fade-up"
                   >
@@ -247,7 +247,7 @@ const Work = () => (
                       Graphic Design
                     </div>
                   </Link>
-                  <Link to="/cryptox" className="Work_list" data-aos="fade-up">
+                  <Link to="/work/cryptox" className="Work_list" data-aos="fade-up">
                     <div className="media-container">
                       <img src="/images/Cryptox.png" alt="" />
                       <span className="open-case">

@@ -10,7 +10,7 @@ const Work = () => (
           <h2 className="section-title" data-aos="fade-up">
             Our Work
           </h2>
-          <Link to="/lineage-journey" className="Work_list" data-aos="fade-up">
+          <Link to="/work/lineage-journey" className="Work_list" data-aos="fade-up">
             <video
               muted
               playsInline
@@ -27,7 +27,7 @@ const Work = () => (
               UI/UX, Mobile, Front-end, CMS
             </div>
           </Link>
-          <Link to="/cryptox" className="Work_list" data-aos="fade-up">
+          <Link to="/work/cryptox" className="Work_list" data-aos="fade-up">
             <video
               muted
               playsInline
@@ -44,7 +44,7 @@ const Work = () => (
               UI/UX, Front-end
             </div>
           </Link>
-          <Link to="/" className="Work_list" data-aos="fade-up">
+          <Link to="/work" className="Work_list" data-aos="fade-up">
             <video
               muted
               playsInline
@@ -63,7 +63,7 @@ const Work = () => (
           </Link>
           <div className="row">
             <div className="col-md-6 col-sm-12">
-              <Link to="/youth-summit" className="Work_list" data-aos="fade-up">
+              <Link to="/work/youth-summit" className="Work_list" data-aos="fade-up">
                 <div className="media-container">
                   <img src="/images/Youth-Summit.png" alt="" />
                   <span className="open-case">
@@ -77,7 +77,7 @@ const Work = () => (
                 </div>
               </Link>
               <Link
-                to="/childrens-century-classics"
+                to="/work/childrens-century-classics"
                 className="Work_list"
                 data-aos="fade-up"
               >
@@ -95,7 +95,7 @@ const Work = () => (
                   UI/UX, Mobile App, Front-end, CMS
                 </div>
               </Link>
-              <Link to="/fhcb" className="Work_list" data-aos="fade-up">
+              <Link to="/work/fhcb" className="Work_list" data-aos="fade-up">
                 <div className="media-container">
                   <img src="/images/Family-Home-Christian-Books.png" alt="" />
                   <span className="open-case">
@@ -112,7 +112,7 @@ const Work = () => (
               </Link>
             </div>
             <div className="col-md-6 col-sm-12 mt185">
-              <Link to="/corniche" className="Work_list" data-aos="fade-up">
+              <Link to="/work/corniche" className="Work_list" data-aos="fade-up">
                 <div className="media-container">
                   <img src="/images/Corniche-Watches.png" alt="" />
                   <span className="open-case">
@@ -126,7 +126,7 @@ const Work = () => (
                 </div>
               </Link>
               <Link
-                to="/strategy-prep"
+                to="/work/strategy-prep"
                 className="Work_list"
                 data-aos="fade-up"
               >
@@ -143,7 +143,7 @@ const Work = () => (
                 </div>
               </Link>
               <Link
-                to="/plate-app"
+                to="/work/plate-app"
                 className="Work_list mb123"
                 data-aos="fade-up"
               >
