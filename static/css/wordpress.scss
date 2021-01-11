@@ -23,7 +23,6 @@
   font-family: "Circe Light";
   color: $white;
   padding-bottom: 38px;
-  width: 60%;
   padding-top: 213px;
 }
 
@@ -104,16 +103,18 @@
   padding: 30px 0 0 30px;
   margin-bottom: 10px;
   height: 188px;
+  .wp-service-description {
+    display: none;
+  }
+  h2 {
+    font-size: 21px;
+    line-height: 130.5%;
+    color: $blue;
+  }
 }
 
 .wp-services-container:last-child {
   margin-top: 207px;
-}
-
-.wp-services-bg h2 {
-  font-size: 21px;
-  line-height: 130.5%;
-  color: $blue;
 }
 
 .no-padding {
