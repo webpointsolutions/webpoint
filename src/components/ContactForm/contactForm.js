@@ -9,7 +9,7 @@ const ContactForm = () => {
         <form
             action="https://getform.io/f/0439874a-9b9b-4088-b8c5-4335224922ed"
             method="POST"
-            data-aos="fade-up"
+            // data-aos="fade-up"
         >
             <div className="row">
             <div className="input-container col-md-6 col-sm-12">
