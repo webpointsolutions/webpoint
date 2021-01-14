@@ -1,0 +1,103 @@
+.featured-blog {
+    display: flex;
+    flex: 1;
+    max-height: 895px;
+    background-color: $footerBg;
+    padding-bottom: 239px;
+
+    .fb-title {
+        p {
+            font-family: "Circe Light", sans-serif;
+            font-size: 60px;
+            color: #ffffff;
+            font-weight: 400;
+        }
+    }
+
+    .blog-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        :nth-child(1) {
+            margin-right: 12px;
+        }
+        :nth-child(2) {
+            margin-left: 12px;
+        }
+    }
+
+    .blog-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 48%;
+
+        .blog-img-holder {
+            width: 100%;
+            height: 380px;
+            overflow: hidden;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 18px;
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .b-title {
+            line-height: 28px;
+            color: #fff;
+            font-size: 24px;
+            margin: 2px;
+        }
+        .b-sub {
+            line-height: 21px;
+            font-size: 18px;
+            color: #dff3fe;
+            margin: 2px;
+        }
+    }
+
+    .b-more {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 82px;
+        .b-m-inner {
+            position: relative;
+            width: 10em;
+        }
+        p {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 24px;
+            margin: 0px;
+            transition: all ease 500ms;
+            &:hover {
+                color: #FFF;
+                cursor: pointer;
+                transition: all ease 500ms;
+            }
+
+            &:after {
+                content: "";
+                border: 1px solid $white;
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                opacity: 0.5;
+                transition: all ease 500ms;
+                width: 85%;
+              }
+              &:hover {
+                &:after {
+                  opacity: 1;
+                  transition: all ease 500ms;
+                  width: 85%;
+                }
+              }
+        }
+    }
+}

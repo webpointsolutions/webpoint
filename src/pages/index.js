@@ -7,6 +7,8 @@ import HeroVideo from "../components/HeroVideo/heroVideo"
 import Service from "../components/Service/service"
 import Work from "../components/Work/work"
 import Calendly from '../components/Calendly'
+import Technologies from '../components/Technologies/technologies'
+import FeaturedBlog from '../components/FeaturedBlog '
 
 const IndexPage = () => {
   const [animCompleted, setAnimCompleted] = useState(false)
@@ -41,6 +43,8 @@ const IndexPage = () => {
         <HeroVideo />
         <Service />
         <Work />
+        <Technologies />
+        <FeaturedBlog />
         <Calendly />
       </SplashScreen>
     </Layout>
