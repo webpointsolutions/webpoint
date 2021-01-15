@@ -1,30 +1,25 @@
 import React, { useEffect, useState } from 'react'
-import { fetchBlogPosts, fetchBlogCategories } from '../../api/blogs'
+import { fetchBlogPosts, fetchBlogCategories, fetchFeaturedMedia } from '../../api/blogs'
+import { parseHtml } from '../../utils/utils'
+import LazyImage from './lazyImage'
 import './style.scss'
 
-const parseHtml = (html, tag, attr) => {
-    var dom = new DOMParser()
-    var htmlDoc = dom.parseFromString(html, "text/html")
-    return htmlDoc.querySelector(tag)[attr]
-}
 
 const FeaturedBlog = () => {
     const [blogs, setBlogs] = useState([])
     const [categories, setCategories] = useState(null)
     const fetchBlogs = async () => {
         var b = await fetchBlogPosts()
-        console.log(b)
-        var blogList = b.data.slice(0,2).map(bl => {
+        var blogList = b.data.slice(0, 2).map(bl => {
             const cat_names = bl.categories.map(c => {
                 return categories.filter(cc => cc.id === c)[0].name
             })
             return {
                 title: bl.title.rendered,
                 subTitle: cat_names.join(", "),
-                image: parseHtml(bl.content.rendered, "img", "src")
+                image: (bl.featured_media !== 0) ? { type: "id", value: bl.featured_media } : { type: "src", value: parseHtml(bl.content.rendered, "img", "src") }
             }
         })
-        // if()
         setBlogs(blogList)
     }
     const fetchCategories = async () => {
@@ -59,7 +54,12 @@ const FeaturedBlog = () => {
                             {blogs.map(blog =>
                                 <div className="blog-item">
                                     <div className="blog-img-holder">
-                                        <img src={blog.image} alt={"Blog image"} />
+                                        {/* <img src={blog.image} alt={"Blog image"} /> */}
+                                        {console.log("Blog value inside: ", blog)}
+                                        <LazyImage
+                                            type={blog.image.type}
+                                            value={blog.image.value}
+                                        />
                                     </div>
                                     <p className="b-title">{blog.title}</p>
                                     <p className="b-sub">{blog.subTitle}</p>

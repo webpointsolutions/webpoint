@@ -1,0 +1,132 @@
+@import "../../../static/css/variables.scss";
+
+.b-top-bar {
+    margin-top: 100px;
+    margin-bottom: 200px;
+    p {
+        font-size: 16px;
+        font-weight: 400;
+        color: $footerBg;
+        opacity: 0.5;
+    }
+    .f-1 {
+        cursor: pointer;
+    }
+    .f-2 {
+        margin-left: 30px;
+        cursor: pointer;
+    }
+    .f-3 {
+        margin-left: 30px;
+        cursor: pointer;
+    }
+    .f-5 {
+        margin-left: 30px;
+        opacity: 1;
+    }
+    p.active {
+        color: $black;
+        opacity: 1;
+    }
+    .arrow-holder {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5px;
+        cursor: pointer;
+    }
+    .select {
+        position: relative;
+        border: none;
+        background: transparent;
+
+        outline: none;
+        // -webkit-appearance: none;
+        // -moz-appearance: none;
+        // -ms-appearance: none;
+        // appearance: none;
+    }
+    .select::after {
+        content: url("../../../static/images/arrow-down.svg");
+        position: absolute;
+        height: 20px;
+        top: 0;
+        right: 0;
+        padding: 0 1em;
+        background: #34495e;
+        cursor: pointer;
+        // pointer-events: none;
+        -webkit-transition: 0.25s all ease;
+        -o-transition: 0.25s all ease;
+        transition: 0.25s all ease;
+    }
+}
+
+.wrap-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.blog-card {
+    width: 45%;
+    &:nth-child(2) {
+        margin-left: 15px;
+    }
+    &:nth-child(1) {
+        margin-right: 15px;
+    }
+
+    .card-subtitle {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+        .dot-div {
+            height: 5px;
+            width: 5px;
+            border-radius: 5px;
+            border-color: $portfolioList;
+            background-color: $portfolioList;
+            margin-left: 15px;
+            margin-top: 16px;
+        }
+
+        .card-tag {
+            font-size: 16px;
+            color: rgba(0, 0, 0, 0.6);
+            margin-bottom: 5px;
+            margin-top: 22px; 
+        }
+        .card-date {
+            font-size: 16px;
+            color: rgba(0, 0, 0, 0.6);
+            margin-left: 15px;
+            margin-bottom: 5px;
+            margin-top: 22px;
+        }
+    }
+    .card-title {
+        font-size: 38px;
+        margin-top: 8px;
+
+        @include respond-above(sm) {
+            font-size: 20px;
+        }
+    }
+}
+
+.card-img-holder {
+    // width: 45%;
+    height: 331px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card-image {
+    height: 100%;
+    width: auto;
+}
