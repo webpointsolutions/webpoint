@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'gatsby'
 import { fetchBlogPosts, fetchBlogCategories, fetchFeaturedMedia } from '../../api/blogs'
 import { parseHtml } from '../../utils/utils'
 import LazyImage from './lazyImage'
 import './style.scss'
 
 
-const FeaturedBlog = () => {
+const FeaturedBlog = ({ navigate }) => {
     const [blogs, setBlogs] = useState([])
     const [categories, setCategories] = useState(null)
     const fetchBlogs = async () => {
@@ -17,7 +18,8 @@ const FeaturedBlog = () => {
             return {
                 title: bl.title.rendered,
                 subTitle: cat_names.join(", "),
-                image: (bl.featured_media !== 0) ? { type: "id", value: bl.featured_media } : { type: "src", value: parseHtml(bl.content.rendered, "img", "src") }
+                image: (bl.featured_media !== 0) ? { type: "id", value: bl.featured_media } : { type: "src", value: parseHtml(bl.content.rendered, "img", "src") },
+                slug: bl.slug
             }
         })
         setBlogs(blogList)
@@ -52,23 +54,27 @@ const FeaturedBlog = () => {
                         </div>
                         <div className="blog-list">
                             {blogs.map(blog =>
-                                <div className="blog-item">
-                                    <div className="blog-img-holder">
-                                        {/* <img src={blog.image} alt={"Blog image"} /> */}
-                                        {console.log("Blog value inside: ", blog)}
-                                        <LazyImage
-                                            type={blog.image.type}
-                                            value={blog.image.value}
-                                        />
+                                <Link to={`/article?q=${blog.slug}`} className="blog-item">
+                                    <div className="blog-item-inner">
+                                        <div className="blog-img-holder">
+                                            <LazyImage
+                                                type={blog.image.type}
+                                                value={blog.image.value}
+                                                containerClass="img-holder"
+                                            />
+                                        </div>
+                                        <p className="no-outline b-title">{blog.title}</p>
+                                        <p className="no-outline b-sub">{blog.subTitle}</p>
                                     </div>
-                                    <p className="b-title">{blog.title}</p>
-                                    <p className="b-sub">{blog.subTitle}</p>
-                                </div>)}
+                                </Link>
+                            )}
                         </div>
                         <div className="b-more">
-                            <div className="b-m-inner">
-                                <p>More Article</p>
-                            </div>
+                            <Link to="/blog" style={{ textDecoration: 'none' }}>
+                                <div className="b-m-inner">
+                                    <p> More Article</p>
+                                </div>
+                            </Link>
                         </div>
                     </div>
                 </div>

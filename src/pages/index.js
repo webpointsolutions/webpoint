@@ -10,7 +10,7 @@ import Calendly from '../components/Calendly'
 import Technologies from '../components/Technologies/technologies'
 import FeaturedBlog from '../components/FeaturedBlog '
 
-const IndexPage = () => {
+const IndexPage = (props) => {
   const [animCompleted, setAnimCompleted] = useState(false)
   const schema = {
     "@context": "https://schema.org",
@@ -44,7 +44,7 @@ const IndexPage = () => {
         <Service />
         <Work />
         <Technologies />
-        <FeaturedBlog />
+        <FeaturedBlog navigate={props.navigate}/>
         <Calendly />
       </SplashScreen>
     </Layout>

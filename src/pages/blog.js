@@ -36,6 +36,7 @@ const Blog = (props) => {
                 subTitle: cat_names.join(", "),
                 image: (bl.featured_media !== 0) ? { type: "id", value: bl.featured_media } : { type: "src", value: parseHtml(bl.content.rendered, "img", "src") },
                 content: bl.content.rendered,
+                slug: bl.slug,
                 tags: tag_names,
                 date: bl.date
             }
@@ -96,11 +97,12 @@ const Blog = (props) => {
         }
     }, [tagChoice, orderChoice, loaded])
 
+    console.log(props)
 
     return (
         <div>
             <Header />
-            <SEO />
+            <SEO title="Blogs" description="..."/>
             <section id="blog-main">
                 <div className="container-fluid">
                     <div className="row justify-content-center">

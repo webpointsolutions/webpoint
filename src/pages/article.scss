@@ -1,0 +1,80 @@
+@import "../../static/css/function";
+@import "../../static/css/variables";
+
+.loader {
+    border: 3px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 3px solid #2C5DE5;
+    width: 72px;
+    height: 72px;
+    -webkit-animation: spin 1s linear infinite; /* Safari */
+    animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.dot-div-blog {
+    height: 5px;
+    width: 5px;
+    border-radius: 5px;
+    border-color: $portfolioList;
+    background-color: $portfolioList;
+    margin-left: 10px;
+    margin-right: 10px;
+    // margin-top: 16px;
+}
+.blog-top {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.blog-top-icon {
+    margin-right: 10px;
+}
+.blog-tags {
+    font-size: 18px;
+    color: $textColor;
+    font-weight: normal;
+}
+.b-title {
+    font-weight: 400;
+    font-size: 55px;
+    @include respond-above(md) {
+        font-size: 20px;
+    }
+}
+.top-left-item {
+    margin-right: 27px;
+}
+
+.top-title-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}

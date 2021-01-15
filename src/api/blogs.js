@@ -21,3 +21,7 @@ export const fetchFeaturedMedia = async (mediaId) => {
 export const fetchBlogTags = async () => {
     return await axios.get(`${BASE_URL}tags`)
 }
+
+export const fetchPostBySlug = async (slug) => {
+    return await axios.get(`${BASE_URL}posts?slug=${slug}`)
+}
