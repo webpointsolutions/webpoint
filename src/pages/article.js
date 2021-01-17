@@ -114,12 +114,19 @@ const Article = (props) => {
                                     <LazyImage type={"id"} value={blog.featured_media} containerClass="featured-image-container" imgClass="feat-image" />
                                 </div>
                             </div>
-                            <div className="col-lg-8">
+                            <div className="">
                                 <div
-                                    dangerouslySetInnerHTML={{"__html": blog.content.rendered}}
+                                    dangerouslySetInnerHTML={{ "__html": blog.content.rendered }}
+                                    className="article-container"
                                 >
 
                                 </div>
+                            </div>
+                            <div className="col-lg-8 tag-holder">
+                                {blog.tags.map(tag => <span>{`#${tag}`}</span>)}
+                            </div>
+                            <div className="col-lg-8 next-btn">
+                                <p>Next</p>
                             </div>
                         </div>
                     </> :

@@ -25,3 +25,7 @@ export const fetchBlogTags = async () => {
 export const fetchPostBySlug = async (slug) => {
     return await axios.get(`${BASE_URL}posts?slug=${slug}`)
 }
+
+export const fetchCommentsByPost = async (postId) => {
+    return await axios.get(`${BASE_URL}comments?post=${postId}`)
+}
