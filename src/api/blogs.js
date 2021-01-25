@@ -1,4 +1,5 @@
 import axios from 'axios'
+import moment from 'moment'
 
 const BASE_URL = "https://blog.webpoint.io/wp-json/wp/v2/"
 
@@ -28,4 +29,15 @@ export const fetchPostBySlug = async (slug) => {
 
 export const fetchCommentsByPost = async (postId) => {
     return await axios.get(`${BASE_URL}comments?post=${postId}`)
+}
+
+export const postComment = async ({name, email, comment, parent, post}) => {
+    const formData = new FormData()
+    formData.append("author_name", name)
+    formData.append('author_email', email)
+    formData.append('content', comment)
+    formData.append('parent', parent)
+    formData.append('post', post)
+    // formData.append('date', moment().format("YYYY-MM-DDTHH:MM:SS"))
+    return await axios.post(`${BASE_URL}comments`, formData)
 }

@@ -5,6 +5,7 @@ import Header from '../components/Header/header'
 import SEO from '../components/seo'
 import LazyImage from '../components/FeaturedBlog /lazyImage'
 import { fetchFeaturedMedia, fetchBlogCategories, fetchBlogTags, fetchPostBySlug } from '../api/blogs'
+import Comments from '../components/Comments/Comments'
 import FB from '../../static/images/icons/fb.svg'
 import Twitter from '../../static/images/icons/twitter.svg'
 import './article.scss'
@@ -15,14 +16,15 @@ const Article = (props) => {
     const [categories, setCategories] = useState(null)
     const [tags, setTags] = useState(null)
     const [blog, setBlog] = useState()
+    const [commentsLoaded, setComments] = useState(0)
     const [loaded, setLoaded] = useState(false)
+    const [commentOrder, setOrder] = useState("desc")
 
     const fetchBlog = async (query, __categories, __tags) => {
         try {
             var data = await fetchPostBySlug(query)
             if (data.status === 200) {
                 let _blog = data.data[0]
-                // debugger
                 const _blog_categories = _blog.categories.map(cat => {
                     return categories.filter(c => c.id === cat)[0].name
                 })
@@ -127,6 +129,34 @@ const Article = (props) => {
                             </div>
                             <div className="col-lg-8 next-btn">
                                 <p>Next</p>
+                            </div>
+                            <div className="comments-holder">
+                                <div className="comments-top col-md-8">
+                                    <p>{`Comments`}<span className="cmt-number">{`(${commentsLoaded})`}</span></p>
+                                    <select
+                                        onChange={e => {
+                                            console.log(e.target.value)
+                                            setOrder(e.target.value)
+                                        }}
+                                    >
+                                        <option value="desc">Newest</option>
+                                        <option value="asc">Oldest</option>
+                                    </select>
+                                </div>
+                                <div className="comments-body col-md-8">
+                                    {blog ?
+                                        <Comments
+                                            postId={blog.id}
+                                            onChangeComments={setComments}
+                                            order={commentOrder}
+                                            /> :
+                                        <div className="loader-container">
+                                            <div className="loader">
+
+                                            </div>
+                                        </div>
+                                    }
+                                </div>
                             </div>
                         </div>
                     </> :
