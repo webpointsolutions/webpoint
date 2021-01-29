@@ -4,7 +4,9 @@ module.exports = {
   siteMetadata: {
     title: `Webpoint`,
     description: `Webpoint is a leading web and mobile applications development company. We create beautiful UI/UX designs and engaging user experiences.`,
-    author: `@webpoint`,
+    image: `static/images/logo-blue.svg`,
+    url: `https://webpoint.io/`,
+    author: `Webpoint Solutions`,
   },
   plugins: [
     {

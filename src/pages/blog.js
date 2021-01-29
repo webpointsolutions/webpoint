@@ -102,7 +102,7 @@ const Blog = (props) => {
     return (
         <div>
             <Header />
-            <SEO title="Blogs" description="..."/>
+            <SEO title="Webpoint Blog" description="The Webpoint blog focuses on various design and development tutorials. You will find actionable tips and helpful resources on web performance and security, UX/UI Design, best technologies, and much more..."/>
             <section id="blog-main">
                 <div className="container-fluid">
                     <div className="row justify-content-center">
@@ -112,7 +112,7 @@ const Blog = (props) => {
                                     <div className="d-flex flex-column align-items-center justify-content-center">
                                         <div className="b-inner">
                                             <div className="col-lg-8">
-                                                <p className="top-title">Blog</p>
+                                                <p className="top-title">Webpoint Blog</p>
                                             </div>
                                         </div>
                                         <div className="b-overlay-container">

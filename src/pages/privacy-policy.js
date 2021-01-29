@@ -6,18 +6,19 @@ import "./privacy-policy.scss"
 
 const PrivacyPolicy = () => (
   <Layout>
-    <SEO title="Privacy Policy" />
+    <SEO title="Privacy Policy" description="Webpoint Solutions LLC (https://webpoint.io/) is committed to
+              protecting the privacy of all of our website visitors."/>
     <div className="container-fluid privacy-policy">
       <div className="row justify-content-center">
         <div className="col-10">
           <div className="privacy-policy-wrap">
             <h1 data-aos="fade-up">Privacy Policy</h1>
             <p data-aos="fade-up">
-              WebPoint Solutions LLC (https://webpoint.io/) is committed to
+              Webpoint Solutions LLC (https://webpoint.io/) is committed to
               protecting the privacy of all of our website visitors. In this
               privacy policy, you can familiarize yourself with the different
               kinds of information that we collect and how we use it. If you
-              have any questions regarding how WebPoint Solutions LLC protects
+              have any questions regarding how Webpoint Solutions LLC protects
               your privacy, feel free to contact us via phone or email:
             </p>
             <p data-aos="fade-up">
@@ -26,7 +27,7 @@ const PrivacyPolicy = () => (
             </p>
             <h3 data-aos="fade-up">Log Files</h3>
             <p data-aos="fade-up">
-              WebPoint Solutions uses standard procedures when we use log files.
+              Webpoint Solutions uses standard procedures when we use log files.
               These are the files that log when a visitor visits our website.
               Every hosting company does this as a way to provide hosting
               analytics. The important information contained in log files
@@ -43,7 +44,7 @@ const PrivacyPolicy = () => (
             </p>
             <h3 data-aos="fade-up">Cookies and Beacons</h3>
             <p data-aos="fade-up">
-              All websites use cookies, so WebPoint Solutions is no exception!
+              All websites use cookies, so Webpoint Solutions is no exception!
               Cookies are used by every website to store information, such as
               visitor preferences and the pages that the visitor visited while
               on the website. The information that we collect through cookies
@@ -60,7 +61,7 @@ const PrivacyPolicy = () => (
             </p>
             <h3 data-aos="fade-up">Third-Party Privacy Policies</h3>
             <p data-aos="fade-up">
-              WebPoint Solutions's Privacy Policy does not apply to other
+              Webpoint Solutions's Privacy Policy does not apply to other
               advertisers or websites. You will need to consider the individual
               privacy policies of any respective third-party ad servers,
               partners, or other websites that we link to. On each respective
@@ -70,12 +71,12 @@ const PrivacyPolicy = () => (
             </p>
             <h3 data-aos="fade-up">Children's Information</h3>
             <p data-aos="fade-up">
-              WebPoint Solutions is very serious about protecting children if
+              Webpoint Solutions is very serious about protecting children if
               and when they land on our website. Of course, we encourage parents
               always to observe, monitor, and participate in their children's
               online activities, but we also know that this is not always
-              possible. That is why WebPoint Solutions goes above and beyond to
-              protect the privacy of minors. WebPoint Solutions does not
+              possible. That is why Webpoint Solutions goes above and beyond to
+              protect the privacy of minors. Webpoint Solutions does not
               knowingly collect any Personal Identifiable Information from
               children under the age of 13. However, if you suspect that your
               child provided this kind of identifiable information on our
