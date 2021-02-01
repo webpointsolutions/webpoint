@@ -7,7 +7,7 @@
   padding: 111px 0 26px 0;
   font-family: "Circe Light", sans-serif;
   &_left {
-    margin-right: 226px;
+    margin-right: 50px;
     &_title {
       color: $footerTitle;
       display: block;
@@ -45,7 +45,7 @@
       }
     }
     @include respond-above(lg) {
-      margin-right: 150px;
+      margin-right: 50px;
       &_link {
         display: inline;
         font-size: 45px;
@@ -61,6 +61,7 @@
     }
   }
   &_right {
+    min-width: 200px;
     &_title {
       color: $white;
       display: block;
@@ -115,4 +116,8 @@
       }
     }
   }
+}
+
+.flex-sb {
+  justify-content: space-between; 
 }

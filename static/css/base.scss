@@ -73,6 +73,7 @@ pre {
 
 a {
   background-color: transparent;
+  text-decoration: none;
 }
 
 /**
@@ -359,4 +360,10 @@ template {
 
 .no-decoration {
   text-decoration: none;
+}
+
+
+.mw-1170 {
+  width: 66px;
+  max-width: 1170px;
 }

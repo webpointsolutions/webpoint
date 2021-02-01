@@ -10,6 +10,7 @@ import './blog.scss'
 import LazyImage from '../components/FeaturedBlog /lazyImage'
 import TopBar from '../components/Blogs/topNav'
 import BlogList from '../components/Blogs/blogList'
+import { Link } from 'gatsby'
 
 
 const Blog = (props) => {
@@ -128,7 +129,9 @@ const Blog = (props) => {
                                                         <p className="feat-topic">{featured.tags}</p>
                                                         <p className="feat-date">{moment(featured.date).format("MMMM DD, YYYY")}</p>
                                                     </div>
-                                                    <p className="feat-title">{featured.title}</p>
+                                                    <Link to={`/article?q=${featured.slug}`}>
+                                                        <p className="feat-title">{featured.title}</p>
+                                                    </Link>
                                                 </div>
                                             </div>
                                         </div>
