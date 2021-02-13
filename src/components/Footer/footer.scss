@@ -4,10 +4,10 @@
 /* Footer */
 .footer {
   background: $footerBg;
-  padding: 111px 0 26px 0;
+  padding: 0 0 26px 0;
   font-family: "Circe Light", sans-serif;
   &_left {
-    margin-right: 50px;
+    margin-right: 226px;
     &_title {
       color: $footerTitle;
       display: block;
@@ -45,7 +45,7 @@
       }
     }
     @include respond-above(lg) {
-      margin-right: 50px;
+      margin-right: 150px;
       &_link {
         display: inline;
         font-size: 45px;
@@ -61,7 +61,6 @@
     }
   }
   &_right {
-    min-width: 200px;
     &_title {
       color: $white;
       display: block;
@@ -116,8 +115,4 @@
       }
     }
   }
-}
-
-.flex-sb {
-  justify-content: space-between; 
 }
