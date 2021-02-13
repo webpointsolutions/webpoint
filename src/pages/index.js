@@ -2,49 +2,53 @@ import React, { useState, useEffect } from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import SplashScreen from '../components/SplashScreen'
+import SplashScreen from "../components/SplashScreen"
 import HeroVideo from "../components/HeroVideo/heroVideo"
 import Service from "../components/Service/service"
 import Work from "../components/Work/work"
-import Calendly from '../components/Calendly'
-import Technologies from '../components/Technologies/technologies'
-import FeaturedBlog from '../components/FeaturedBlog '
+import Calendly from "../components/Calendly"
+import Technologies from "../components/Technologies/technologies"
+import FeaturedBlog from "../components/FeaturedBlog "
 
-const IndexPage = (props) => {
+const IndexPage = props => {
   const [animCompleted, setAnimCompleted] = useState(false)
   const schema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Webpoint Solutions, LLC",
-    "image": "https://webpoint.io/images/logo-blue.svg",
-    "url": "https://webpoint.io/",
-    "telephone": "+1 (470) 755-6225",
-    "address": {
+    name: "Webpoint Solutions, LLC",
+    image: "https://webpoint.io/images/logo-blue.svg",
+    url: "https://webpoint.io/",
+    telephone: "+1 (470) 755-6225",
+    address: {
       "@type": "PostalAddress",
-      "streetAddress": "255 Arthurs Lane",
-      "addressLocality": "Covington",
-      "addressRegion": "GA",
-      "postalCode": "30016",
-      "addressCountry": "US"
+      streetAddress: "255 Arthurs Lane",
+      addressLocality: "Covington",
+      addressRegion: "GA",
+      postalCode: "30016",
+      addressCountry: "US",
     },
-    "sameAs": [
+    sameAs: [
       "https://www.facebook.com/webpointsolutionsllc",
       "https://twitter.com/WebpointSoluti1",
-      "https://www.linkedin.com/company/webpoint-solutions-llc/"
+      "https://www.linkedin.com/company/webpoint-solutions-llc/",
     ],
-
   }
   return (
     <Layout hideFooter={!animCompleted}>
-      <SplashScreen onAnimCompleted={() => {
-        setAnimCompleted(true)
-      }}>
-        <SEO title="Website Design & Development | App Development" schemaMarkup={schema}/>
+      <SplashScreen
+        onAnimCompleted={() => {
+          setAnimCompleted(true)
+        }}
+      >
+        <SEO
+          title="Website Design & Development | App Development"
+          schemaMarkup={schema}
+        />
         <HeroVideo />
         <Service />
         <Work />
         <Technologies />
-        <FeaturedBlog navigate={props.navigate}/>
+        <FeaturedBlog navigate={props.navigate} />
         <Calendly />
       </SplashScreen>
     </Layout>

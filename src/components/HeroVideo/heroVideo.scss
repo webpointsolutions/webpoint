@@ -3,7 +3,7 @@
 
 /* Hero Video */
 .HeroVideo {
-  margin-top: 49px;
+  margin-top: 30px;
   &_text {
     h1 {
       font-family: "Circe Light", sans-serif;
@@ -47,7 +47,7 @@
       &:after{
         transform: scaleX(1);
       }
-      
+
     }
     @include respond-above(sm) {
       h1 {
@@ -59,7 +59,7 @@
     }
   }
   &_video {
-    margin-top: 159px;
+    margin-top: 100px;
     video {
       width: 100%;
     }
