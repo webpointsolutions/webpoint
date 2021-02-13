@@ -15,7 +15,8 @@ const Header = () => {
   // change state on scroll
   useEffect(() => {
     const handleScroll = () => {
-      const isScrolled = window.scrollY > 10
+      const isScrolled = window.scrollY > 0
+      console.log("isScroll",isScrolled)
       if (isScrolled !== scrolled) {
         setScrolled(!scrolled)
       }
