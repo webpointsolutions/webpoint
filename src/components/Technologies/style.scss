@@ -7,13 +7,13 @@
     background-color: $footerBg;
 
     @media screen and (max-width: 768px) {
-        padding: 111px 0px 54px 0px;
+        padding: 50px 0px 0px 0px;
        .topic-container {
             display: flex;
             flex-direction: column;
             margin-block-start: 0;
             padding-inline-start: 0;
-            margin-top: 83px;
+            margin-top: 50px;
             .topic {
                 cursor: pointer;
             }
@@ -38,14 +38,13 @@
     }
 
  @media screen and (min-width: 768px) {
-        padding: 111px 0px 54px 0px;
-
+        padding: 50px 0px 50px 0px;
        .topic-container {
             display: flex;
             flex-direction: row;
             margin-block-start: 0;
             padding-inline-start: 0;
-            margin-top: 83px;
+            margin-top: 50px;
             .topic {
                 cursor: pointer;
             }
@@ -81,7 +80,7 @@
         flex-wrap: wrap;
         width: 100%;
         margin-top: 63px;
-        margin-bottom: 100px;
+        // margin-bottom: 50px;
 
         .tech-item {
             display: flex;
@@ -119,7 +118,7 @@
         flex-wrap: wrap;
         width: 100%;
         margin-top: 63px;
-        margin-bottom: 100px;
+        // margin-bottom: 50px;
 
         .tech-item {
             display: flex;
@@ -169,7 +168,7 @@
         flex-wrap: wrap;
         width: 100%;
         margin-top: 63px;
-        margin-bottom: 200px;
+        // margin-bottom: 200px;
         justify-content: center;
     }
 }
@@ -181,7 +180,7 @@
         flex-wrap: wrap;
         width: 100%;
         margin-top: 63px;
-        margin-bottom: 100px;
+        // margin-bottom: 50px;
         justify-content: center;
 
         .tech-item {
