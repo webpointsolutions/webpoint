@@ -13,7 +13,7 @@ const Service = () => {
         <div className="row justify-content-center">
           <div className="col-lg-10 d-flex sm-column">
             <h2 className="section-title" data-aos="fade-up">
-              Our Sevices
+              Our Services
             </h2>
             <div className="Services_list" data-aos="fade-up">
               <div className="Services_list_wrap">
