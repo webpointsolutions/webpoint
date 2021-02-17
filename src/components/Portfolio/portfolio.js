@@ -53,10 +53,7 @@ const Portfolio = ({
                 </ul>
               </div>
             </div>
-            <div
-              className="d-flex justify-content-center mb200"
-              data-aos="fade-up"
-            >
+            <div className="d-flex justify-content-center" data-aos="fade-up">
               <Link to={nextPage} className="next">
                 Next
               </Link>
