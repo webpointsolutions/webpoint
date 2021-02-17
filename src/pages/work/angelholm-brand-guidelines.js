@@ -16,7 +16,7 @@ const AngelholmBrandGuidelines = () => (
       processImage="/images/Angelholm-process.png"
       resultContent="50 page universal template for quick and easy brand guide customization. The Angelholm Brand Guidelines cover all aspects of design including logo, color, type, web, social media, print, packaging and imagery."
       techUsed={["Sketch", "Figma", "InDesign"]}
-      nextPage="/home-health-education"
+      nextPage="/work/home-health-education"
     ></Portfolio>
   </Layout>
 )

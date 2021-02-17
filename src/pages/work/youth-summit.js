@@ -18,7 +18,7 @@ const YouthSummit = () => (
       processImage="/images/youth-summit-process.png"
       resultContent="The resulting design was much more attractive than other similar programs. The custom e-commerce functionality helped the program continue to run even during COVID-19"
       techUsed={["Figma", "WordPress", "Elementor", "PHP"]}
-      nextPage="/corniche"
+      nextPage="/work/corniche"
     ></Portfolio>
   </Layout>
 )

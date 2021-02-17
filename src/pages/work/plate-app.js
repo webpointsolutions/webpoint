@@ -16,7 +16,7 @@ const PlateApp = () => (
       processImage="/images/plate-process.png"
       resultContent="We were able to create a truly impressive application with a high user rating. The application provides a convenient filter. With it, you can choose a specific kitchen, delivery time, minimum amount and payment method. Also in the program you can read reviews about this or that restaurant and check ratings. If you are a regular customer of the service, you can create a personal account with order histories, discounts and unique offers."
       techUsed={["Sketch", "React Native"]}
-      nextPage="/childrens-century-classics"
+      nextPage="/work/childrens-century-classics"
     ></Portfolio>
   </Layout>
 )

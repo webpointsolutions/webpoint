@@ -16,7 +16,7 @@ const FHCB = () => (
       processImage="/images/fhcb-process.png"
       resultContent="First of all, we developed a design system, so that all products of the company have a common style and adhere to the same rules in design. The interface has received significant improvements. Now the main functions have become more accessible, and thanks to the responsive design the site is convenient to use on any device."
       techUsed={["Figma"]}
-      nextPage="/plate-app"
+      nextPage="/work/plate-app"
     ></Portfolio>
   </Layout>
 )

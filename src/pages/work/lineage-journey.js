@@ -6,9 +6,9 @@ import Portfolio from "../../components/Portfolio/portfolio"
 
 const LineageJourney = () => (
   <Layout>
-    <SEO 
-    title="Lineage Journey" 
-    description="Create a clean and modern user interface, increase the site performance and SEO, add new features and restruction the data, and create a mobile app"
+    <SEO
+      title="Lineage Journey"
+      description="Create a clean and modern user interface, increase the site performance and SEO, add new features and restruction the data, and create a mobile app"
     />
     <Portfolio
       projectName="Lineage Journey (CURRENTLY IN PROGRESS"
@@ -20,7 +20,7 @@ const LineageJourney = () => (
       processImage="/images/lineage-process.png"
       resultContent="This project is currently in progress and we expect to have it completed by December, 2020"
       techUsed={["Figma", "Gatsby", "WordPress", "AWS Amplify", "React Native"]}
-      nextPage="/jeewit-bachan"
+      nextPage="/work/jeewit-bachan"
     ></Portfolio>
   </Layout>
 )
