@@ -39,7 +39,10 @@ const Work = () => (
                     data-aos="fade-up"
                   >
                     <div className="media-container">
-                      <img src="/images/Lineage-Journey.png" alt="Lineage Journey" />
+                      <img
+                        src="/images/Lineage-Journey.png"
+                        alt="Lineage Journey"
+                      />
                       <span className="open-case">
                         open <br />
                         case
@@ -50,7 +53,11 @@ const Work = () => (
                       UI/UX, Mobile, Front-end, CMS
                     </div>
                   </Link>
-                  <Link to="/work/fhcb" className="Work_list" data-aos="fade-up">
+                  <Link
+                    to="/work/fhcb"
+                    className="Work_list"
+                    data-aos="fade-up"
+                  >
                     <div className="media-container">
                       <img
                         src="/images/Family-Home-Christian-Books.png"
@@ -64,9 +71,7 @@ const Work = () => (
                     <div className="Work_list_title">
                       Family Home Christian Books
                     </div>
-                    <div className="Work_list_description">
-                      UI/UX Design
-                    </div>
+                    <div className="Work_list_description">UI/UX Design</div>
                   </Link>
                   <Link
                     to="/work/childrens-century-classics"
@@ -74,7 +79,10 @@ const Work = () => (
                     data-aos="fade-up"
                   >
                     <div className="media-container">
-                      <img src="/images/Children's-Century.png" alt="Children's Century Classics" />
+                      <img
+                        src="/images/Children's-Century.png"
+                        alt="Children's Century Classics"
+                      />
                       <span className="open-case">
                         open <br />
                         case
@@ -101,7 +109,7 @@ const Work = () => (
                     </div>
                     <div className="Work_list_title">Sweet Sanity</div>
                     <div className="Work_list_description">
-                     UI/UX, Front-end, CMS
+                      UI/UX, Front-end, CMS
                     </div>
                   </Link>
                   <Link
@@ -145,9 +153,16 @@ const Work = () => (
                   </Link>
                 </div>
                 <div className="col-md-6 col-sm-12 mt185">
-                  <Link to="/work/corniche" className="Work_list" data-aos="fade-up">
+                  <Link
+                    to="/work/corniche"
+                    className="Work_list"
+                    data-aos="fade-up"
+                  >
                     <div className="media-container">
-                      <img src="/images/Corniche-Watches.png" alt="Corniche Watches" />
+                      <img
+                        src="/images/Corniche-Watches.png"
+                        alt="Corniche Watches"
+                      />
                       <span className="open-case">
                         open <br />
                         case
@@ -164,7 +179,10 @@ const Work = () => (
                     data-aos="fade-up"
                   >
                     <div className="media-container">
-                      <img src="/images/Jeewit-Bachan.png" alt="Jeewit Bachan" />
+                      <img
+                        src="/images/Jeewit-Bachan.png"
+                        alt="Jeewit Bachan"
+                      />
                       <span className="open-case">
                         open <br />
                         case
@@ -217,7 +235,10 @@ const Work = () => (
                     data-aos="fade-up"
                   >
                     <div className="media-container">
-                      <img src="/images/Angelholm.png" alt="Angelholm Brand Guidlines" />
+                      <img
+                        src="/images/Angelholm.png"
+                        alt="Angelholm Brand Guidlines"
+                      />
                       <span className="open-case">
                         open <br />
                         case
@@ -226,9 +247,7 @@ const Work = () => (
                     <div className="Work_list_title">
                       Angelholm Brand Guidelines
                     </div>
-                    <div className="Work_list_description">
-                      UI/UX Design
-                    </div>
+                    <div className="Work_list_description">UI/UX Design</div>
                   </Link>
                   <Link
                     to="/work/annual-report"
@@ -236,18 +255,23 @@ const Work = () => (
                     data-aos="fade-up"
                   >
                     <div className="media-container">
-                      <img src="/images/Annual-Report.png" alt="Annual Report" />
+                      <img
+                        src="/images/Annual-Report.png"
+                        alt="Annual Report"
+                      />
                       <span className="open-case">
                         open <br />
                         case
                       </span>
                     </div>
                     <div className="Work_list_title">Annual Report</div>
-                    <div className="Work_list_description">
-                      Graphic Design
-                    </div>
+                    <div className="Work_list_description">Graphic Design</div>
                   </Link>
-                  <Link to="/work/cryptox" className="Work_list" data-aos="fade-up">
+                  <Link
+                    to="/work/cryptox"
+                    className="Work_list"
+                    data-aos="fade-up"
+                  >
                     <div className="media-container">
                       <img src="/images/Cryptox.png" alt="Cryptox" />
                       <span className="open-case">

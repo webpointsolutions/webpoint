@@ -15,7 +15,7 @@ const AnnualReport = () => (
       goalsContent="Coming soon...."
       resultContent="Coming soon"
       techUsed={["InDesign"]}
-      nextPage="/reach-nepal"
+      nextPage="/work/reach-nepal"
     ></Portfolio>
   </Layout>
 )

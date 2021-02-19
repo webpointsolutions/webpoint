@@ -86,7 +86,7 @@
     }
   }
   &_goals {
-    margin: 155px 0;
+    margin: 50px 0;
     h3 {
       color: $textColor;
       font-family: "Circe", sans-serif;
@@ -183,6 +183,7 @@
     }
   }
   .next {
+    margin-bottom: 50px;
     color: $textColor;
     font-family: "Circe Light", sans-serif;
     font-weight: 300;

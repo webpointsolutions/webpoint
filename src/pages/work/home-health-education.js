@@ -15,8 +15,15 @@ const HomeHealthEducation = () => (
       goalsContent="We worked with the client to come up with the user flow and responsive layout that would be intuitive to use, and easy to visualize important information and address several issues with their current workflow"
       processImage="/images/hhes-process.png"
       resultContent="We created a fully custom platform that drastically reduced paperwork, reduced that time to follow up on leads, and provide critical information for the sales reps to maximize their efficiency"
-      techUsed={["Figma", "React", "SCSS", "PostgreSQL", "AWS Redis", "AWS EC2"]}
-      nextPage="/annual-report"
+      techUsed={[
+        "Figma",
+        "React",
+        "SCSS",
+        "PostgreSQL",
+        "AWS Redis",
+        "AWS EC2",
+      ]}
+      nextPage="/work/annual-report"
     ></Portfolio>
   </Layout>
 )

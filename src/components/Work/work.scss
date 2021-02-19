@@ -3,33 +3,17 @@
 
 /* Work */
 .Work {
-  margin-left: 100px;
-  // margin-top: 100px;
   .section-title {
-    margin-bottom: 73px;
-  }
-
-  .swiper-slider{
-    width: 90%;
-    height: 900px;
+    margin-bottom: 30px;
   }
 
   .img-height{
-    height: 700px;
+    height:auto;
   }
-  @media screen and (max-width:1100px) {
-    .img-height{
-      height: 722px;
-    }
-  }
-  @media screen and (max-width:1700px) {
-    .img-height{
-      height: 640px;
-    }
-  }
+
   &_list {
     display: block;
-    margin-bottom: 238px;
+    margin-bottom: 100px;
     text-decoration: none;
     &_title {
       color: $black;
@@ -48,9 +32,10 @@
       transition: opacity ease-out 0.4s;
     }
     @include respond-above(sm) {
-      margin-bottom: 60px;
+      margin-bottom: 30px;
     }
   }
+
   .media-container {
     position: relative;
     overflow: hidden;
@@ -81,14 +66,17 @@
       }
     }
   }
+
   @include respond-above(sm) {
-    margin-top: 100px;
+    // margin-top: 50px;
   }
+
   .see-more-wrapper{
     display: flex;
     align-items: center;
     justify-content: flex-end;
   }
+
   .see_more {
     display: inline-block;
     font-family: "Circe", sans-serif;
@@ -96,7 +84,7 @@
     line-height: 117.4%;
     color: $descriptionText;
     opacity: 0.5;
-    margin-bottom:px;
+    margin-bottom: 0px;
     text-decoration: none;
     position: relative;
     transition: all ease 500ms;
@@ -117,68 +105,191 @@
       }
     }
   }
-
-  // @media screen and (max-width:1100px){
-  //   .see-more-wrapper{
-  //     display: flex;
-  //     align-items: center;
-  //     justify-content: center;
-  //   }
-
-  // }
-  // @media screen and (min-width:700px){
-  //   .see-more-wrapper{
-  //     display: flex;
-  //     align-items: center;
-  //     justify-content: start;
-  //   }
-
-  // }
-  // @media screen and (min-width:750px){
-  //   .see_more{
-  //     margin-left:200px;
-  //   }
-
-  // }
-
 }
+
 @media screen and (max-width:1100px){
-.Work{ margin-left: 50px;
+.Work{
   .see_more{
     font-size: 25px;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
   }}
 }
+
 @media screen and (max-width:600px){
-  .Work{ margin-left: 20px;
+  .Work{
     max-height: 500px;
     .see_more{
       font-size: 20px;
-      margin-bottom: 35px;
-    }
-    .img-height{
-      height: 190px;
-    }
-  }
-  }
-
-  @media screen and (max-width:1100px){
-    .Work{ margin-left: 20px;
-      max-height: 800px;
-      .see_more{
-        font-size: 20px;
-        margin-bottom: 35px;
-      }
-      .img-height{
-        height: 470px;
-      }
-    }
-    }
-.Work_list {
-  &:hover {
-    .Work_list_description {
-      opacity: 0.7;
-      transition: opacity ease-in 0.4s;
+      // margin-bottom: 35px;
     }
   }
 }
+
+@media screen and (max-width:1100px){
+  .Work{
+    max-height: 800px;
+    .see_more{
+      font-size: 20px;
+      // margin-bottom: 35px;
+    }
+  }
+}
+
+
+.Work_list {
+    video {
+      width: 100%;
+      height: auto;
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+    @include respond-above(sm) {
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+}
+
+
+.Portfolio {
+  &_banner {
+    min-height: 641px;
+    @include respond-above(sm) {
+      min-height: 400px;
+    }
+    h1 {
+      color: $textColor;
+      font-family: "Circe Light", sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 69px;
+      line-height: 126.9%;
+      width: 90%;
+      margin: 0 auto;
+      @include respond-above(sm) {
+        font-size: 30px;
+      }
+    }
+  }
+  &_services {
+    padding: 50px 0;
+    .title {
+      color: $textColor;
+      font-family: "Circe", sans-serif;
+      font-size: 24px;
+      line-height: 121.4%;
+      opacity: 0.5;
+      &_desc {
+        color: $textColor;
+        font-family: "Circe Light", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 49px;
+        line-height: 121.4%;
+        // margin: 11px 0 0 0;
+        max-width: 897px;
+        @include respond-above(sm) {
+          font-size: 25px;
+        }
+      }
+    }
+    &_btm {
+      margin-top: 100px;
+      h4 {
+        color: $textColor;
+        font-family: "Circe", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 121.4%;
+        margin: 0;
+        @include respond-above(sm) {
+          font-size: 18px;
+        }
+      }
+      ul {
+        list-style: none;
+        margin: 10px 0 62px 0;
+        padding: 0;
+        li {
+          color: $textColor;
+          font-family: "Circe Light", sans-serif;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 20px;
+          line-height: 164.4%;
+        }
+      }
+    }
+    &.manifesto {
+      .title {
+        color: $white;
+        &_desc {
+          color: $white;
+        }
+      }
+      h4 {
+        font-family: "Circe Light", sans-serif;
+        font-weight: 300;
+        color: $white;
+        opacity: 0.5;
+        margin-bottom: 29px;
+        transition: all ease 500ms;
+        &:hover {
+          opacity: 1;
+          transition: all ease 500ms;
+        }
+      }
+    }
+  }
+  &_slider {
+    padding-bottom: 50px;
+    .slick-slider {
+      // margin-right: -15px;
+      overflow: hidden;
+      @include respond-above(sm) {
+        // margin-right: 0;
+      }
+      .slick-arrow {
+        display: none !important;
+      }
+    }
+    .slick-list {
+      // margin-right: -95px;
+      @include respond-above(md) {
+        // margin-right: -50px;
+      }
+    }
+    .slick-slide > div {
+      // margin-right: 50px;
+      @include respond-above(md) {
+        // margin-right: 25px;
+      }
+    }
+    .slider-wrap {
+      position: relative;
+      .button {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        width: 35%;
+        opacity: 0;
+        &-prev {
+          left: 0;
+          cursor: url("../../../static/images/long-arrow-left.svg"),
+            url("../../../static/images/long-arrow-left.svg"), default;
+        }
+        &-next {
+          right: 0;
+          cursor: url("../../../static/images/long-arrow-right.svg"),
+            url("../../../static/images/long-arrow-right.svg"), default;
+        }
+      }
+    }
+    @include respond-above(sm) {
+      padding-bottom: 0;
+    }
+  }
+}
+

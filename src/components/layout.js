@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React, { useEffect } from "react"
+import React, { useEffect, Fragment } from "react"
 //import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./Header/header"
@@ -20,7 +20,7 @@ import Footer from "./Footer/footer"
 import AOS from "aos"
 import "aos/dist/aos.css"
 
-const Layout = ({ children, hideFooter=false }) => {
+const Layout = ({ children, hideFooter = false }) => {
   useEffect(() => {
     AOS.init({
       // Global settings:
@@ -45,14 +45,13 @@ const Layout = ({ children, hideFooter=false }) => {
   }, [])
 
   return (
-    <>
+    <Fragment>
       <Header />
-
       <div>
         <main>{children}</main>
-        {hideFooter?null:<Footer />}
+        {hideFooter ? null : <Footer />}
       </div>
-    </>
+    </Fragment>
   )
 }
 

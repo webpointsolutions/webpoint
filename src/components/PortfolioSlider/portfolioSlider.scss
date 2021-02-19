@@ -1,0 +1,16 @@
+@import "../../../static/css/function";
+@import "../../../static/css/variables";
+
+.Work_list {
+    video {
+      width: 100%;
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+    @include respond-above(sm) {
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+  }

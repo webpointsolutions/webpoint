@@ -6,8 +6,8 @@ import Portfolio from "../../components/Portfolio/portfolio"
 
 const ReachNepal = () => (
   <Layout>
-    <SEO 
-      title="Reach Nepal" 
+    <SEO
+      title="Reach Nepal"
       description="Update the website to give it a modern look, add functionality and update user flow. "
     />
     <Portfolio
@@ -20,7 +20,7 @@ const ReachNepal = () => (
       processImage="/images/reach-nepal-process.png"
       resultContent="First of all, we developed a design system, so that all products of the company have a common style and adhere to the same rules in design. The interface has received significant improvements. Now the main functions have become more accessible, and thanks to the responsive design the site is convenient to use on any device."
       techUsed={["Figma", "React", "SCSS", "OAuth"]}
-      nextPage="/cryptox"
+      nextPage="/work/cryptox"
     ></Portfolio>
   </Layout>
 )

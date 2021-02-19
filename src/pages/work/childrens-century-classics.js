@@ -6,10 +6,7 @@ import Portfolio from "../../components/Portfolio/portfolio"
 
 const ChildrenCenturyClassics = () => (
   <Layout>
-    <SEO
-      title="Children Century Classics
-    "
-    />
+    <SEO title="Children Century Classics" />
     <Portfolio
       projectName="Childrens Century Classics"
       projectCategory="UI/UX, Mobile, Front-end, CMS"
@@ -20,7 +17,7 @@ const ChildrenCenturyClassics = () => (
       processImage="/images/Childrens-Century-process.png"
       resultContent="First of all, we developed a design system, so that all products of the company have a common style and adhere to the same rules in design. The interface has received significant improvements. Now the main functions have become more accessible, and thanks to the responsive design the site is convenient to use on any device. We built a responsive web app using React Gatsby, and also created a new mobile app with an improved user interface using React Native"
       techUsed={["Gatsby", "React Native", "SCSS", "WordPress"]}
-      nextPage="/strategy-prep"
+      nextPage="/work/strategy-prep"
     ></Portfolio>
   </Layout>
 )

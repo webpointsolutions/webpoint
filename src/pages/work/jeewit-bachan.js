@@ -7,7 +7,7 @@ import Portfolio from "../../components/Portfolio/portfolio"
 const JeewitBachan = () => (
   <Layout>
     <SEO
-      title="Jeewit Bachan Website &amp; Mobile App" 
+      title="Jeewit Bachan Website &amp; Mobile App"
       description="Create a complete design system for the client and then implement this into a modern responsive web app that was media focused and offered offline PWA functionality, in addition to a mobile app"
     />
     <Portfolio
@@ -19,8 +19,15 @@ const JeewitBachan = () => (
       goalsContent="Create a complete design system for the client and then implement this into a modern responsive web app that was media focused and offered offline PWA functionality, in addition to a mobile app"
       processImage="/images/Jeewit-Bachan-process.png"
       resultContent="This project is still in progress, and should be completed by November, 2020"
-      techUsed={["Figma", "React", "MongoDB", "StrapiCMS", "React Native", "AWS EC2"]}
-      nextPage="/fhcb"
+      techUsed={[
+        "Figma",
+        "React",
+        "MongoDB",
+        "StrapiCMS",
+        "React Native",
+        "AWS EC2",
+      ]}
+      nextPage="/work/fhcb"
     ></Portfolio>
   </Layout>
 )

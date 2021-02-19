@@ -1,8 +1,16 @@
 import React from "react"
-
+import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "./404.scss"
+
+const codeStyles = {
+  color: "#8A6534",
+  padding: 4,
+  backgroundColor: "#FFF4DB",
+  fontSize: "1.25rem",
+  borderRadius: 4,
+}
 
 const NotFoundPage = () => (
   <Layout>
@@ -20,7 +28,7 @@ const NotFoundPage = () => (
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            <i className="arr-left"></i>Go Back
+            <i className="arr-left"></i> <Link to="/">Go home</Link>
           </a>
         </div>
       </div>
