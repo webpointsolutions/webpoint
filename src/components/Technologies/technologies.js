@@ -24,16 +24,15 @@ const Technologies = props => {
 
   const [selTopic, setTopic] = useState(1)
   const renderTopicContaint = topic => {
-    console.log("Selecte:", topic, Object.values(TechList))
     const topicC = filter(Object.values(TechList), item => item.id === topic)[0]
     console.log(topicC)
     return (
       <div className="tech-c">
         {topicC.list.map((item, index) => (
           <div key={`item-${index}`} className="tech-item">
-            <dev className="tech-img">
+            <div className="tech-img">
               <img src={item.icon} />
-            </dev>
+            </div>
             <p>{item.title}</p>
           </div>
         ))}
