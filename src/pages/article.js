@@ -59,16 +59,21 @@ const Article = props => {
   }
 
   const fetchTags = async () => {
-    const _tags = await fetchBlogTags()
-    if (_tags.status === 200) {
-      let _tagsList = _tags.data.map(tag => ({
-        name: tag.name,
-        slug: tag.slug,
-        id: tag.id,
-      }))
-      setTags(_tagsList)
+    try {
+      const _tags = await fetchBlogTags()
+      console.log("tags", _tags)
+      if (_tags.status === 200) {
+        let _tagsList = _tags.data.map(tag => ({
+          name: tag.name,
+          slug: tag.slug,
+          id: tag.id,
+        }))
+        setTags(_tagsList)
 
-      fetchBlog(query)
+        fetchBlog(query)
+      }
+    } catch (error) {
+      console.log("fetchTags", error)
     }
   }
 
@@ -141,9 +146,9 @@ const Article = props => {
                 <span>{`#${tag}`}</span>
               ))}
             </div>
-            <div className="col-lg-8 next-btn">
+            {/* <div className="col-lg-8 next-btn">
               <p>Next</p>
-            </div>
+            </div> */}
             <div className="comments-holder">
               <div className="comments-top col-md-8">
                 <p>

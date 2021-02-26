@@ -23,22 +23,21 @@ const TopBar = ({ tags, onTopicChange, onFilterApplied }) => {
             </p>
           ))}
         {/* <p
-                className={`${selected === 2 ? 'active' : ''} f-2`}
-                onClick={() => {
-                    setSelected(2)
-                }}
-            >
-                Marketing
-            </p>
-            <p
-                className={`${selected === 3 ? 'active' : ''} f-3`}
-                onClick={() => {
-                    setSelected(3)
-                }}
-            >
-                Tech
-            </p>
-        */}
+          className={`${selected === 2 ? "active" : ""} f-2`}
+          onClick={() => {
+            setSelected(2)
+          }}
+        >
+          Marketing
+        </p>
+        <p
+          className={`${selected === 3 ? "active" : ""} f-3`}
+          onClick={() => {
+            setSelected(3)
+          }}
+        >
+          Tech
+        </p> */}
       </div>
       <div className="b-top-right">
         <p className="f-4">Filter by</p>

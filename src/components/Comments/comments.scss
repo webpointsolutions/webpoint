@@ -1,6 +1,6 @@
 .cmt-body {
     // width: 66.66%;
-    padding-top: 70px;
+    padding-top: 20px;
 
     .depth- {
         &0 {
@@ -23,7 +23,7 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
-        margin: 40px 0 40px 0;
+        margin: 20px 0 20px 0;
         width: 100%;
         .cmt-top {
             display: flex;
@@ -96,7 +96,7 @@
             }
         }
         textarea {
-            margin-top: 40px;
+            margin-top: 20px;
             font-size: 22px;
             color: $white;
             resize: none;
@@ -145,8 +145,8 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
-        padding-top: 100px;
-        border-top-color: rgba(78,79,97,0.3);
+        padding-top: 30px;
+        border-top-color: rgba(44, 45, 66, 0.3);
         border-top-style: solid;
         border-top-width: 4px;
         width: 80%;

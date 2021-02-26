@@ -14,35 +14,44 @@ const FeaturedBlog = ({ navigate }) => {
   const [categories, setCategories] = useState(null)
 
   const fetchBlogs = async () => {
-    var b = await fetchBlogPosts()
-    var blogList = b.data.slice(0, 2).map(bl => {
-      const cat_names = bl.categories.map(c => {
-        return categories.filter(cc => cc.id === c)[0].name
+    try {
+      var b = await fetchBlogPosts()
+      console.log("blogList", b)
+      var blogList = b.data.slice(0, 2).map(bl => {
+        const cat_names = bl.categories.map(c => {
+          return categories.filter(cc => cc.id === c)[0].name
+        })
+        return {
+          title: bl.title.rendered,
+          subTitle: cat_names.join(", "),
+          image:
+            bl.featured_media !== 0
+              ? { type: "id", value: bl.featured_media }
+              : {
+                  type: "src",
+                  value: parseHtml(bl.content.rendered, "img", "src"),
+                },
+          slug: bl.slug,
+        }
       })
-      return {
-        title: bl.title.rendered,
-        subTitle: cat_names.join(", "),
-        image:
-          bl.featured_media !== 0
-            ? { type: "id", value: bl.featured_media }
-            : {
-                type: "src",
-                value: parseHtml(bl.content.rendered, "img", "src"),
-              },
-        slug: bl.slug,
-      }
-    })
-    setBlogs(blogList)
+      setBlogs(blogList)
+    } catch (error) {
+      console.log("blogList error", error)
+    }
   }
 
   const fetchCategories = async () => {
-    const _categories = await fetchBlogCategories()
-    if (_categories.status === 200) {
-      let _categoriesList = _categories.data.map(cat => ({
-        name: cat.name,
-        id: cat.id,
-      }))
-      setCategories(_categoriesList)
+    try {
+      const _categories = await fetchBlogCategories()
+      if (_categories.status === 200) {
+        let _categoriesList = _categories.data.map(cat => ({
+          name: cat.name,
+          id: cat.id,
+        }))
+        setCategories(_categoriesList)
+      }
+    } catch (error) {
+      console.log("fetchCategories error", error)
     }
   }
   useEffect(() => {
@@ -72,6 +81,7 @@ const FeaturedBlog = ({ navigate }) => {
                         type={blog.image.type}
                         value={blog.image.value}
                         containerClass="img-holder"
+                        imgClass="blog-img"
                       />
                     </div>
                     <p className="no-outline b-title">{blog.title}</p>
