@@ -1,8 +1,8 @@
 @import "../../../static/css/variables.scss";
 
 .b-top-bar {
-    margin-top: 100px;
-    margin-bottom: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     p {
         font-size: 16px;
         font-weight: 400;
@@ -98,7 +98,7 @@
             font-size: 16px;
             color: rgba(0, 0, 0, 0.6);
             margin-bottom: 5px;
-            margin-top: 22px; 
+            margin-top: 22px;
         }
         .card-date {
             font-family: 'Circe Light';
@@ -129,6 +129,6 @@
 }
 
 .card-image {
-    height: 100%;
-    width: auto;
+    height: auto;
+    width: 100%;
 }

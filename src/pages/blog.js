@@ -26,6 +26,8 @@ const Blog = props => {
   const [orderChoice, setOrderChoices] = useState(null)
   const [blogLoading, setBlogLoading] = useState(false)
 
+  console.log("featured", featured)
+
   const fetchBlogs = async (tag_choice = null, date_order = "desc") => {
     var b = await fetchBlogPosts(tag_choice, date_order)
     var blogList = b.data.slice(0, 2).map(bl => {

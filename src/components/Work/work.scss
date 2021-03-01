@@ -246,8 +246,7 @@
   &_slider {
     padding-bottom: 50px;
     .slick-slider {
-      // margin-right: -15px;
-      overflow: hidden;
+      // overflow: hidden;
       @include respond-above(sm) {
         // margin-right: 0;
       }
@@ -262,10 +261,15 @@
       }
     }
     .slick-slide > div {
-      // margin-right: 50px;
-      @include respond-above(md) {
-        // margin-right: 25px;
-      }
+      margin-right: 60px;
+      margin-left: 60px;
+        @include respond-above(md) {
+          margin-right: 30px;
+          margin-left: 30px;
+        }
+    }
+    .slick-dots {
+      bottom: 30px;
     }
     .slider-wrap {
       position: relative;
@@ -273,7 +277,7 @@
         height: 100%;
         position: absolute;
         top: 0;
-        width: 35%;
+        width: 40%;
         opacity: 0;
         &-prev {
           left: 0;
