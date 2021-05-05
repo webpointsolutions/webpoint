@@ -48,7 +48,6 @@ const IndexPage = props => {
         <Service />
         <Work />
         <Technologies />
-        <FeaturedBlog navigate={props.navigate} />
         <Calendly />
       </SplashScreen>
     </Layout>
