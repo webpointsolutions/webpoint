@@ -17,6 +17,7 @@
     "gatsby-plugin-offline": "^3.2.22",
     "gatsby-plugin-react-helmet": "^3.3.10",
     "gatsby-plugin-robots-txt": "^1.5.5",
+    "gatsby-plugin-remove-console": "0.0.2",
     "gatsby-plugin-sass": "^2.3.12",
     "gatsby-plugin-scroll-reveal": "^0.0.7",
     "gatsby-plugin-sharp": "^2.6.25",
@@ -39,6 +40,7 @@
     "swiper": "^6.4.11"
   },
   "devDependencies": {
+    "babel-plugin-transform-remove-console": "^6.9.4",
     "gatsby-plugin-force-trailing-slashes": "^1.0.4",
     "prettier": "2.0.5"
   },

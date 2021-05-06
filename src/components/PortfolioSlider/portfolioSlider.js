@@ -25,14 +25,10 @@ export default function PortfolioSlider() {
   }
 
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 500,
-    lazyLoad: "ondemand",
-    autoPlay: true,
-    autoplaySpeed: 500,
     slidesToShow: 1,
-    pauseOnHover: false,
     slidesToScroll: 1,
     easing: "linear",
     responsive: [
@@ -48,10 +44,9 @@ export default function PortfolioSlider() {
   return (
     <div className="container-fluid">
       <div className="row justify-content-center">
-        <div className="col-lg-11 slider-wrap">
+        <div className="col-lg-12 slider-wrap">
           <Slider
             {...settings}
-            //rtl={rtl}
             asNavFor={nav}
             ref={slider => (slider1 = slider)}
           >

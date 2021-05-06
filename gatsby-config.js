@@ -14,6 +14,13 @@ module.exports = {
       options: {
         host: `https://webpoint.io/`,
         policy: [{ userAgent: "*", allow: "/" }],
+
+      }
+    },
+    {
+      resolve: "gatsby-plugin-remove-console",
+      options: {
+        exclude: ["error", "warn"], // <- will be removed all console calls except these
       },
     },
     {

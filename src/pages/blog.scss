@@ -2,7 +2,7 @@
 @import "../../static/css/variables";
 
 #blog-main {
-    padding-bottom: 321px;
+    padding-bottom: 50px;
 }
 
 .loader {
@@ -35,7 +35,7 @@
 .top-title {
     font-family: "Circe Light";
     font-size: 47px;
-    margin: 10px;
+    margin: 0px;
 }
 
 .b-outer {
@@ -86,12 +86,13 @@
 }
 .feat-image {
     width: 100%;
-    height: auto;
+    height: 100%;
     opacity: 0.9;
+    background-color: gray;
 }
 .b-overlay-container {
     position: relative;
-    
+
     .b-overlay {
         position: absolute;
         width: 100%;
@@ -104,7 +105,6 @@
 
         .col-md-8 {
             margin-top: 18%;
-
             @include respond-above(md) {
                 margin-top: 10%;
             }
@@ -118,7 +118,7 @@
 
             .featured-text {
                 background-color: $blue;
-                padding: 10px 19px 10px 19px;
+                // padding: 10px 19px 10px 19px;
                 p {
                     color: $white;
                     font-size: 20px;
@@ -136,26 +136,26 @@
                 font-size: 20px;
                 color: $white;
                 font-weight: 400;
-                margin-left: 27px;
-                
+                // margin-left: 27px;
+
                 @include respond-above(md) {
                     font-size: 14px;
                 }
-                &::after {
-                    content: ".";
-                    color: $white;
-                    font-size: 48px;
-                    position: absolute;
-                    bottom: 199px;
-                    margin-left: 14px;
-                }
+                // &::after {
+                //     content: ".";
+                //     color: $white;
+                //     font-size: 48px;
+                //     position: absolute;
+                //     // bottom: -199px;
+                //     margin-left: 14px;
+                // }
             }
             .feat-date {
                 font-size: 20px;
                 color: $white;
                 font-weight: 400;
                 margin-left: 40px;
-                
+
                 @include respond-above(md) {
                     font-size: 14px;
                 }
