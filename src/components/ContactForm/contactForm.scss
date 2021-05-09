@@ -1,7 +1,37 @@
 @import "../../../static/css/function.scss";
 @import "../../../static/css/variables.scss";
 
-form {
+.container-main {
+  // border: solid black;
+  padding-top: 62px;
+  background: #1f4ce4;
+
+  position: relative;
+
+  .line-left {
+    border-top: 1px solid #dff3fe;
+    opacity: 0.2;
+
+    left: 0;
+    width: 51%;
+    position: absolute;
+    top: 185px;
+  }
+
+  .line-right {
+    border-top: 1px solid #dff3fe;
+    border-left: 1px solid #dff3fe;
+    opacity: 0.2;
+    right: 0;
+    top: 185px;
+    height: 73.7%;
+    width: 49%;
+    position: absolute;
+  }
+  form {
+    position: relative;
+
+    margin-left: 8.5167vw;
     font-family: "Circe Light", sans-serif;
     font-weight: 300;
     font-size: 16px;
@@ -14,6 +44,15 @@ form {
       height: 26px;
       padding-left: 0;
       width: 252px;
+      font-size: 22px;
+      font-weight: 300;
+      line-height: 117.4%;
+      /* or 26px */
+
+      /* #FFFFFF */
+      color: #ffffff;
+      //opacity: 0.7;
+
       &:focus {
         outline: none;
         &::placeholder {
@@ -21,11 +60,13 @@ form {
         }
       }
     }
+
     .input-wrapper {
       display: inline-block;
       position: relative;
       margin: 25px 0 25px 0;
       width: 85%;
+
       input,
       textarea {
         width: 100%;
@@ -37,10 +78,20 @@ form {
         }
       }
       .placeholder {
+        background: transparent;
         position: absolute;
+        font-size: 22px;
+        line-height: 117.4%; //suspect
+        /* or 26px */
+
+        /* #FFFFFF */
+
+        color: #ffffff;
+
+        opacity: 0.7;
         top: 1px;
         left: 2px;
-        z-index: -1;
+        z-index: 5;
         &:before {
           content: attr(data-placeholder);
           color: rgba($textColor, 0.6);
@@ -61,6 +112,17 @@ form {
     .textarea-wrap {
       // margin-bottom: 21px;
       // margin-top: 59px;
+
+      .placeholder {
+        font-size: 22px;
+        font-weight: normal;
+        line-height: 117.4%;
+        /* or 26px */
+
+        /* #FFFFFF */
+
+        color: #ffffff;
+      }
       textarea {
         background: transparent;
         border: none;
@@ -69,6 +131,14 @@ form {
         padding-left: 0;
         resize: none;
         width: 100%;
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 117.4%;
+        /* or 26px */
+
+        /* #FFFFFF */
+
+        color: #ffffff;
         &:focus {
           outline: none;
         }
@@ -92,6 +162,14 @@ form {
           position: absolute;
           top: 0;
           width: 14px;
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 117.4%;
+          /* or 16px */
+
+          /* #FFFFFF */
+
+          color: #ffffff;
           &:after {
             content: "";
             background: $descriptionText;
@@ -107,6 +185,16 @@ form {
         a {
           color: $descriptionText;
           font-family: "Circe", sans-serif;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 117.4%;
+          /* or 16px */
+
+          text-decoration-line: underline;
+
+          /* #FFFFFF */
+
+          color: #ffffff;
         }
       }
       input[type="checkbox"] {
@@ -125,12 +213,13 @@ form {
       font-size: 18px;
       line-height: 117.4%;
       margin-top: 54px;
+      margin-bottom: 129px;
       padding: 0;
       position: relative;
       transition: all ease 500ms;
       &:after {
         content: "";
-        border: 1px solid $black;
+        border: 1px solid #ffffff;
         position: absolute;
         left: 0;
         bottom: -7px;
@@ -158,3 +247,50 @@ form {
       margin-bottom: 0;
     }
   }
+
+  .get-in-touch {
+    margin: 0 0 145px 8.5167vw;
+    font-size: 60px;
+    line-height: 117.4%;
+    /* or 70px */
+
+    /* #FFFFFF */
+
+    color: #ffffff;
+  }
+
+  .contact-btm {
+    //border: solid black;
+    margin-top: 80px;
+    position: absolute;
+    right: 0px;
+    bottom: 255px;
+
+    color: blanchedalmond;
+
+    .aosmail {
+      border-bottom: 2px solid #ffffff;
+
+      a {
+        font-weight: normal;
+        font-size: 49px;
+        line-height: 117.4%;
+
+        /* identical to box height, or 58px */
+
+        /* #FFFFFF */
+        color: #ffffff;
+      }
+    }
+    .aostext {
+      font-weight: 300;
+      font-size: 26px;
+      line-height: 117.4%;
+
+      /* or 31px */
+
+      /* #FFFFFF */
+      color: #ffffff;
+    }
+  }
+}
