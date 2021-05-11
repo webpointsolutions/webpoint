@@ -3,7 +3,32 @@
 
 /* Services */
 .Services {
-  margin-top: 50px;
+  margin-top: 250px;
+  color: #1a191b;
+
+  h3 {
+    font-family: Circe;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 121.4%;
+
+    /* identical to box height, or 44px */
+
+    /* #1A191B */
+    color: #1a191b;
+
+    opacity: 0.7;
+  }
+
+  .section-title {
+    font-family: Circe;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 117.4%;
+  }
+
   &_list {
     margin-left: 240px;
     @include respond-above(lg) {
@@ -21,7 +46,9 @@
       line-height: 121.4%;
       transition: all ease 500ms;
       &:hover {
-        color: $blue;
+        //color: $blue;
+        color: #1f4ce4;
+        opacity: 0.8;
         transition: all ease 500ms;
         &:after {
           background: url(/images/angle-down-blue.svg) no-repeat;
@@ -42,6 +69,7 @@
         position: relative;
       }
       &.active {
+        color: #1f4ce4;
         &:after {
           transform: rotate(180deg);
         }
@@ -74,6 +102,7 @@
       }
       &.active {
         max-height: 500px;
+        color: #1a191b;
         transition: max-height 0.4s ease-in;
       }
     }
