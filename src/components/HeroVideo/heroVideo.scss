@@ -3,58 +3,56 @@
 
 /* Hero Video */
 .HeroVideo {
-  margin-top: 30px;
+  margin-top: 100px;
   &_text {
+    width: 73.571vw;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-bottom: 81px;
+
+    .letwork {
+      border: 2px solid rgba(31, 76, 228, 0.19);
+      //box-sizing: border-box;
+      width: fit-content;
+      border-radius: 44px;
+      padding: 10px 25px;
+      a {
+        //color: $black;
+        color: #1f4ce4;
+
+        font-family: "Circe Light", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 121.4%;
+        position: relative;
+        text-decoration: none;
+        transition: all ease 300ms;
+
+        &:hover {
+          color: $blue;
+          transition: all ease 500ms;
+          &:after {
+            border: 1px solid rgba($color: $blue, $alpha: 0.3);
+            transition: all ease 500ms;
+          }
+        }
+      }
+    }
     h1 {
       font-family: "Circe Light", sans-serif;
       font-style: normal;
+      color: #1a191b;
       font-size: 69px;
       font-weight: 300;
       line-height: 121.9%;
       letter-spacing: -0.025em;
     }
-    a {
-      color: $black;
-      font-family: "Circe Light", sans-serif;
-      font-style: normal;
-      font-weight: 300;
-      font-size: 29px;
-      line-height: 121.4%;
-      position: relative;
-      text-decoration: none;
-      transition: all ease 300ms;
-      &:after {
-        content: "";
-        border: 1px solid rgba($color: $black, $alpha: 0.3);
-        position: absolute;
-        bottom: -5px;
-        left: 0;
-        transform: scaleX(0);
-        transform-origin: left;
-        transition: all ease 500ms;
-        width: 100%;
-      }
-      &:hover {
-        color: $blue;
-        transition: all ease 500ms;
-        &:after {
-          border: 1px solid rgba($color: $blue, $alpha: 0.3);
-          transition: all ease 500ms;
-        }
-      }
-    }
-    .loaded-link {
-      &:after{
-        transform: scaleX(1);
-      }
 
-    }
-    @include respond-above(sm) {
-      h1 {
-        font-size: 30px;
-      }
-      a {
-        font-size: 20px;
+    .loaded-link {
+      &:after {
+        transform: scaleX(1);
       }
     }
   }
@@ -63,10 +61,108 @@
     video {
       width: 100%;
     }
-    @include respond-above(sm) {
-      margin-top: 100px;
-      margin-left: -15px;
-      margin-right: -15px;
+    // @include respond-above(sm) {
+    //   margin-top: 100px;
+    //   margin-left: -15px;
+    //   margin-right: -15px;
+    // }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .HeroVideo {
+    margin-top: 20px;
+
+    .HeroVideo_text {
+      width: 73.571vw;
+      margin-left: auto;
+      margin-right: auto;
+
+      padding-bottom: 5px;
+
+      .letwork {
+        border: 2px solid rgba(31, 76, 228, 0.19);
+
+        width: fit-content;
+        border-radius: 44px;
+        padding: 7px 15px;
+        a {
+          //color: $black;
+          color: #1f4ce4;
+
+          font-family: "Circe Light", sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 121.4%;
+          position: relative;
+          text-decoration: none;
+          transition: all ease 300ms;
+
+          &:hover {
+            color: $blue;
+            transition: all ease 500ms;
+            &:after {
+              border: 1px solid rgba($color: $blue, $alpha: 0.3);
+              transition: all ease 500ms;
+            }
+          }
+        }
+      }
+
+      h1 {
+        font-size: 45px;
+        line-height: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .HeroVideo {
+    margin-top: 0px;
+
+    .HeroVideo_text {
+      width: 73.571vw;
+      margin-left: auto;
+      margin-right: auto;
+
+      padding-bottom: 1px;
+
+      .letwork {
+        border: 2px solid rgba(31, 76, 228, 0.19);
+        //box-sizing: border-box;
+        width: fit-content;
+        border-radius: 44px;
+        padding: 7px 15px;
+        a {
+          //color: $black;
+          color: #1f4ce4;
+
+          font-family: "Circe Light", sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 121.4%;
+          position: relative;
+          text-decoration: none;
+          transition: all ease 300ms;
+
+          &:hover {
+            color: $blue;
+            transition: all ease 500ms;
+            &:after {
+              border: 1px solid rgba($color: $blue, $alpha: 0.3);
+              transition: all ease 500ms;
+            }
+          }
+        }
+      }
+
+      h1 {
+        font-size: 30px;
+        line-height: 30px;
+      }
     }
   }
 }
