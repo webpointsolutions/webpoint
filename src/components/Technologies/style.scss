@@ -19,6 +19,7 @@
       margin-block-start: 0;
       padding-inline-start: 0;
       margin-top: 50px;
+
       .topic {
         cursor: pointer;
       }
@@ -26,7 +27,7 @@
       //     padding: 0px 22px 0 0px;
       // }
       li {
-        //border: solid red;
+        line-height: 22px;
         width: 19%;
         text-align: left;
         font-family: "Circe Light", sans-serif;
@@ -41,7 +42,9 @@
 
     .topic-container .active {
       color: $white;
-      text-underline-offset: 10px;
+      text-underline-offset: 4px;
+
+      //text-underline-position: below;
       text-decoration: underline;
     }
   }
@@ -64,6 +67,7 @@
         font-family: "Circe Light", sans-serif;
         color: $footerTitle;
         font-size: 18px;
+        line-height: 25px;
         list-style: none;
         padding: 0px 22px 0 22px;
       }
@@ -71,7 +75,7 @@
 
     .topic-container .active {
       color: $white;
-      text-underline-offset: 10px;
+      text-underline-offset: 5px;
       text-decoration: underline;
     }
   }
