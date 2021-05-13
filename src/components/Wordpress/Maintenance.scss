@@ -1,0 +1,158 @@
+.wp-maintain {
+  width: 100%;
+  background-color: $wp-bg-1;
+  font-size: 6px;
+  @media (min-width: 1024px) {
+    font-size: 10px;
+  }
+  &__inner {
+    padding: 15em 15px;
+  }
+  &__heading {
+    margin-bottom: 12px;
+    color: $navigationBg;
+    opacity: 0.5;
+    font-size: 2.4em;
+  }
+  &__title-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media (min-width: 768px) {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+  &__title {
+    h2 {
+      font-size: 4.9em;
+      color: $navigationBg;
+      font-weight: 400;
+      line-height: 1.2;
+      margin: 0;
+      margin-bottom: 12px;
+      @media (min-width: 768px) {
+        flex-direction: row;
+        margin: 0;
+      }
+      span {
+        @media (min-width: 1024px) {
+          display: block;
+        }
+      }
+    }
+  }
+  &__billed {
+    display: flex;
+    font-size: 2.4em;
+    color: $navigationBg;
+    white-space: nowrap;
+    span {
+      margin-right: 10px;
+      opacity: 0.5;
+    }
+    .switch {
+      .slider {
+        background-color: #4e4f61;
+      }
+    }
+  }
+  &__card-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 6.4em;
+  }
+}
+
+.wpm-card {
+  font-size: 6px;
+  width: 100%;
+  margin: 15px 0;
+  @media (min-width: 768px) {
+    min-width: 380px;
+    flex: 1;
+    font-size: 10px;
+  }
+  &__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__inner {
+    margin: 0 8px;
+    font-size: 1em;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media (min-width: 768px) {
+      min-height: 500px;
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4.5em 3.6em 3.4em;
+    border-bottom: 1px solid $footerTitle;
+    font-size: 1em;
+  }
+  &__title {
+    font-size: 3em;
+    font-weight: 700;
+    color: $wp-card-title;
+  }
+  &__price {
+    font-size: 22px;
+    color: $wp-card-title;
+    span {
+      color: $blue;
+      font-size: 26px;
+      &:last-child {
+        color: $wp-card-title;
+      }
+    }
+  }
+  &__list {
+    font-size: 1em;
+    padding: 2.2em 2.8em 3.2em 1.8em;
+    @media (min-width: 481px) {
+      padding: 4.4em 5.6em 1em 3.6em;
+    }
+    &__item {
+      display: flex;
+      align-items: baseline;
+      font-size: 1em;
+      margin-bottom: 2.1em;
+      img {
+        height: auto;
+        width: 18px;
+        object-fit: cover;
+      }
+      p {
+        margin: 0;
+        margin-left: 17px;
+        font-size: 20px;
+        color: $wp-card-title;
+      }
+    }
+  }
+  &__button {
+    width: 100%;
+    padding: 0 3.6em;
+    font-size: 1em;
+    margin-bottom: 6.7em;
+    .services-learn-more {
+      margin: 0;
+      a {
+        margin: 0;
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        padding: 17px;
+      }
+    }
+  }
+}
