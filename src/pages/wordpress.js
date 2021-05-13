@@ -5,6 +5,7 @@ import Footer from "../components/Footer/footer"
 import Header from "../components/Header/header"
 import SEO from "../components/seo"
 import Maintenance from "../components/Wordpress/Maintenance"
+import Testimonials from "../components/Testimonial/Testimonials"
 
 const Wordpress = () => {
   return (
@@ -141,6 +142,7 @@ const Wordpress = () => {
         </div>
       </section>
       <Maintenance />
+      <Testimonials />
       <ContactForm />
       <Footer />
     </>
