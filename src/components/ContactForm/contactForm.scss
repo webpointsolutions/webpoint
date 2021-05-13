@@ -1,13 +1,21 @@
 @import "../../../static/css/function.scss";
 @import "../../../static/css/variables.scss";
 
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ffffff;
+
+  opacity: 0.7; /* Firefox */
+}
 .container-main {
   // border: solid black;
-  padding-top: 62px;
+  padding-top: 3.875rem;
   background: #1f4ce4;
-
+  display: flex;
+  flex-direction: column;
   position: relative;
 
+  /* Firefox */
   .line-left {
     border-top: 1px solid #dff3fe;
     opacity: 0.2;
@@ -21,11 +29,14 @@
   .line-right {
     border-top: 1px solid #dff3fe;
     border-left: 1px solid #dff3fe;
+
     opacity: 0.2;
     right: 0;
     top: 185px;
     height: 73.7%;
+
     width: 49%;
+
     position: absolute;
   }
   form {
@@ -34,7 +45,7 @@
     margin-left: 8.5167vw;
     font-family: "Circe Light", sans-serif;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 117.4%;
     input[type="text"],
     input[type="email"] {
@@ -44,7 +55,7 @@
       height: 26px;
       padding-left: 0;
       width: 252px;
-      font-size: 22px;
+      font-size: 1.375rem;
       font-weight: 300;
       line-height: 117.4%;
       /* or 26px */
@@ -80,7 +91,7 @@
       .placeholder {
         background: transparent;
         position: absolute;
-        font-size: 22px;
+        font-size: 1.375rem;
         line-height: 117.4%; //suspect
         /* or 26px */
 
@@ -114,7 +125,7 @@
       // margin-top: 59px;
 
       .placeholder {
-        font-size: 22px;
+        font-size: 1.375rem;
         font-weight: normal;
         line-height: 117.4%;
         /* or 26px */
@@ -127,11 +138,11 @@
         background: transparent;
         border: none;
         border-bottom: 1px solid rgba($descriptionText, 0.5);
-        height: 26px;
+        height: 1.625rem;
         padding-left: 0;
         resize: none;
         width: 100%;
-        font-size: 22px;
+        font-size: 1.375rem;
         font-weight: 300;
         line-height: 117.4%;
         /* or 26px */
@@ -210,7 +221,7 @@
       color: $textColor;
       cursor: pointer;
       font-family: "Circe", sans-serif;
-      font-size: 18px;
+      font-size: 1.125rem;
       line-height: 117.4%;
       margin-top: 54px;
       margin-bottom: 129px;
@@ -249,8 +260,8 @@
   }
 
   .get-in-touch {
-    margin: 0 0 145px 8.5167vw;
-    font-size: 60px;
+    margin: 0 0 9.0625rem 8.5167vw;
+    font-size: 3.75rem;
     line-height: 117.4%;
     /* or 70px */
 
@@ -261,10 +272,9 @@
 
   .contact-btm {
     //border: solid black;
-    margin-top: 80px;
-    position: absolute;
-    right: 0px;
-    bottom: 255px;
+    padding-top: 1.125rem;
+    margin-top: 5rem;
+    width: 50%;
 
     color: blanchedalmond;
 
@@ -273,7 +283,7 @@
 
       a {
         font-weight: normal;
-        font-size: 49px;
+        font-size: 3.0625rem;
         line-height: 117.4%;
 
         /* identical to box height, or 58px */
@@ -284,13 +294,75 @@
     }
     .aostext {
       font-weight: 300;
-      font-size: 26px;
+      font-size: 1.625rem;
       line-height: 117.4%;
 
       /* or 31px */
 
       /* #FFFFFF */
       color: #ffffff;
+    }
+  }
+}
+
+@media (max-width: 977px) {
+  .container-main {
+    form {
+      .row {
+        display: flex;
+
+        .contact-btm {
+          //margin-top: 102px;
+          margin-top: 6.375rem;
+
+          .aostext {
+            font-size: 1.25rem;
+          }
+          .aosmail {
+            a {
+              font-size: 2.187rem;
+            }
+          }
+        }
+      }
+    }
+    .get-in-touch {
+      font-size: 3.125rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container-main {
+    form {
+      .row {
+        display: flex;
+
+        flex-direction: column;
+
+        .contact-btm {
+          margin-top: 6px;
+          margin-bottom: 2.5rem;
+
+          .aostext {
+            font-size: 1.25rem;
+          }
+          .aosmail {
+            a {
+              font-size: 2.187rem;
+            }
+          }
+        }
+      }
+    }
+    .get-in-touch {
+      font-size: 3.125rem;
+    }
+    .line-left {
+      width: 100%;
+    }
+    .line-right {
+      display: none;
     }
   }
 }
