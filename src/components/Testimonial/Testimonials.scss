@@ -1,0 +1,83 @@
+.wp-testimonial {
+  background-color: $footerBg;
+  color: #fff;
+  font-size: 6px;
+  @media (min-width: 1024px) {
+    font-size: 10px;
+  }
+  &__inner {
+    padding: 15em 15px;
+  }
+  &__title {
+    margin-bottom: 45px;
+    h2 {
+      font-size: 6em;
+      color: #fff;
+      font-weight: 400;
+    }
+  }
+  &__card-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__cta {
+    margin-top: 7em;
+    text-align: center;
+    font-size: 1em;
+    a {
+      font-size: 2.9em;
+      color: #fff;
+    }
+  }
+}
+
+.t-card {
+  font-size: 7px;
+  margin-bottom: 15px;
+  flex: 1;
+  min-width: 280px;
+  @media (min-width: 481px) {
+    font-size: 10px;
+    padding: 0 8px;
+  }
+  @media (min-width: 768px) {
+    max-width: 460px;
+    min-width: 360px;
+  }
+  &__inner {
+    padding: 3.6em 3.6em 9em;
+    background-color: #2a2c34;
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+  }
+  &__avatar {
+    margin-right: 2em;
+    font-size: 1em;
+    margin-bottom: 2.4em;
+    img {
+      height: 8em;
+      width: 8em;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+
+  &__name {
+    font-size: 2em;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  &__desig {
+    font-size: 1.8em;
+    white-space: nowrap;
+    font-weight: 500;
+  }
+  &__desc {
+    font-size: 2em;
+    line-height: 1.5;
+    color: #858a8f;
+  }
+}
