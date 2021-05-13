@@ -4,6 +4,7 @@ import ContactForm from "../components/ContactForm/contactForm"
 import Footer from "../components/Footer/footer"
 import Header from "../components/Header/header"
 import SEO from "../components/seo"
+import Testimonials from "../components/Testimonial/Testimonials"
 
 const Wordpress = () => {
   return (
@@ -139,6 +140,7 @@ const Wordpress = () => {
           </div>
         </div>
       </section>
+      <Testimonials />
       <ContactForm />
       <Footer />
     </>
