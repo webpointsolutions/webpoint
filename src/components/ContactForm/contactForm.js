@@ -60,7 +60,8 @@ const ContactForm = () => {
           <input
             type="checkbox"
             id="checkbox"
-            onChange={() => setChecked(!checked)}
+            name="agreement"
+            onClick={() => setChecked(!checked)}
             required="required"
           ></input>
           <label for="checkbox">
