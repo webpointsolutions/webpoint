@@ -1,15 +1,15 @@
 import React from "react"
 import Logoblue from "../../../static/images/logo-subtract.svg"
 
-const Card = ({ title, rate, services }) => {
+const Card = ({ title, rate, services, billingMonthly }) => {
   return (
     <div className="wpm-card">
       <div className="wpm-card__inner">
         <div className="wpm-card__header">
           <div className="wpm-card__title">{title}</div>
           <div className="wpm-card__price">
-            <span>{rate}</span>
-            <span>/</span>month
+            <span>{billingMonthly ? rate?.month : rate?.year}</span>
+            <span>/</span>{billingMonthly ? "month": "year"}
           </div>
         </div>
         <div className="wpm-card__list">

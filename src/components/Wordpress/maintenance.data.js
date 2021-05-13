@@ -1,7 +1,10 @@
 export const cardData = [
   {
     title: "Basic",
-    rate: "$50",
+    rate: {
+      month:"$50",
+      year:"$500"
+    },
     services: [
       "Daily website backups",
       "24/7 webiste uptime monitoring",
@@ -11,7 +14,10 @@ export const cardData = [
   },
   {
     title: "Advanced",
-    rate: "$50",
+    rate: {
+      month:"$50",
+      year:"$500"
+    },
     services: [
       "Minim mollit non",
       "Deserunt ullamco est",
@@ -20,7 +26,10 @@ export const cardData = [
   },
   {
     title: "E-commerce",
-    rate: "$50",
+    rate: {
+      month:"$50",
+      year:"$500"
+    },
     services: [
       "Minim mollit non",
       "Deserunt ullamco est",
