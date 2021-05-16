@@ -1,0 +1,318 @@
+.service-box {
+  display: flex;
+  flex-direction: column;
+  width: 82vw;
+  //width: 895px;
+  margin-top: 7.25rem;
+  margin-bottom: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  .service-title {
+    padding-top: 0;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 0.87rem;
+    width: 100%;
+
+    .text {
+      font-family: Circe;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.5rem;
+      line-height: 121.4%;
+      /* or 29px */
+
+      /* #1A191B */
+
+      color: #1a191b;
+
+      opacity: 0.5;
+    }
+  }
+  .start {
+    width: fit-content;
+    background: #e9edfc;
+    margin-top: 1.25rem;
+    border-radius: 7px;
+    display: flex;
+    cursor: pointer;
+    //justify-content: center;
+    //align-items: center;
+    padding: 0.75rem 1.93rem 0.75rem 1.95rem;
+    a {
+      font-family: Circe;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.37rem;
+      line-height: 121.4%;
+      /* identical to box height, or 27px */
+
+      color: #1f4ce4;
+    }
+  }
+
+  .service-content {
+    display: flex;
+    width: 100%;
+
+    .service-text {
+      width: 50%;
+      margin-right: 2.5rem;
+      p {
+        margin-top: 0;
+        font-family: Circe light;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3.06rem;
+        line-height: 121.4%;
+        /* or 59px */
+
+        /* #1A191B */
+
+        color: #1a191b;
+      }
+    }
+    .service-icons {
+      //min-width: 536px;
+      width: 50%;
+      height: fit-content;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding-bottom: 0.625rem;
+      //justify-content: space-evenly;
+      justify-content: flex-start;
+
+      .icon {
+        background: #e9edfc;
+        border-radius: 12.5015px;
+        display: flex;
+        cursor: pointer;
+
+        flex-direction: column;
+        //justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 40px;
+        padding-left: 38px;
+        padding-bottom: 35px;
+        width: 30%;
+        height: 187px;
+        //height: 33%;
+        margin: 0 0 10.7px 12px;
+        max-width: 200px;
+        //max-height: 187px;
+        min-width: 165px;
+        flex-grow: 1;
+        //flex-shrink: 1;
+
+        h2 {
+          font-family: Circe;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 21px;
+          line-height: 130.5%;
+          /* or 27px */
+
+          /* Main */
+
+          color: #1f4ce4;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1026px) {
+  .service-box {
+    .service-content {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+
+      .service-text {
+        width: 100%;
+      }
+      .service-icons {
+        width: 100%;
+        margin-left: 0;
+        justify-content: flex-start;
+        .icon {
+          margin: 0 10px 10px 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .service-box {
+    width: 94.148vw;
+    .service-content {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+
+      .service-text {
+        width: 100%;
+        p {
+          margin-top: 0;
+
+          font-size: 2.43rem;
+          line-height: 121.4%;
+          /* or 59px */
+
+          /* #1A191B */
+
+          color: #1a191b;
+        }
+      }
+      .service-icons {
+        width: 100%;
+        margin-left: 0;
+        justify-content: flex-start;
+        .icon {
+          margin: 0 10px 10px 0;
+          width: 170px;
+          height: 170px;
+          max-width: 170px;
+          padding-top: 30px;
+          padding-left: 28px;
+          padding-bottom: 15px;
+          h2 {
+            font-family: Circe;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 19px;
+            line-height: 130.5%;
+            /* or 27px */
+
+            /* Main */
+
+            color: #1f4ce4;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .service-box {
+    .start {
+      a {
+        font-size: 0.937rem;
+      }
+    }
+    .service-content {
+      .service-icons {
+        .icon {
+          margin: 0 8px 8px 0;
+          width: 147px;
+          height: 147px;
+          max-width: 147px;
+          min-width: 120px;
+          //max-height: 160px;
+          padding-top: 25px;
+          padding-left: 15px;
+          padding-bottom: 12px;
+
+          // img {
+          //   width: 23%;
+          //   // height: 23%;
+          // }
+
+          h2 {
+            font-family: Circe;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+
+            line-height: 130.5%;
+            /* or 27px */
+
+            /* Main */
+
+            color: #1f4ce4;
+          }
+        }
+      }
+      .service-text {
+        p {
+          margin-top: 0;
+
+          font-size: 2.12rem;
+
+          line-height: 121.4%;
+          /* or 59px */
+
+          /* #1A191B */
+
+          color: #1a191b;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 565px) {
+  .service-box {
+    .service-content {
+      .service-text {
+        p {
+          font-size: 1.56rem;
+        }
+      }
+
+      .service-icons {
+        .icon {
+          margin: 0 8px 8px 0;
+          width: 110px;
+          height: 110px;
+          min-width: 110px;
+          max-width: 110px;
+          padding-top: 14px;
+          padding-left: 7px;
+          padding-bottom: 10px;
+
+          img {
+            width: 25%;
+            height: 26px;
+          }
+
+          h2 {
+            font-family: Circe;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+
+            line-height: 130.5%;
+            /* or 27px */
+
+            /* Main */
+
+            color: #1f4ce4;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .service-box {
+    .service-content {
+      .service-icons {
+        .icon {
+          h2 {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .service-title {
+      .text {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}

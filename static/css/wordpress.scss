@@ -50,13 +50,21 @@
 }
 
 .wp-services {
+  display: none;
   width: 100%;
   height: 100%;
   background: $white;
 }
 
+.col-lg-6 {
+  border: solid black;
+  margin-top: 30px;
+}
+
 .services-text h2 {
-  color: $textColor;
+  //color: $textColor;
+  display: block;
+  color: #1a191b;
   opacity: 0.5;
   font-weight: 400;
   line-height: 121.4%;
@@ -70,12 +78,14 @@
   font-weight: 400;
   font-size: 49px;
   line-height: 121.4%;
-  color: $textColor;
+  color: #1a191b;
   width: 88%;
 }
 
 .services-learn-more {
   margin-bottom: 120px;
+  border: solid black;
+  margin-top: 40px;
 }
 
 .services-learn-more a {
