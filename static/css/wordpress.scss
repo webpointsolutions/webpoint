@@ -24,10 +24,26 @@
   color: $white;
   padding-bottom: 38px;
   padding-top: 213px;
+  @media (max-width: 768px) {
+    font-size: 40px;
+    padding-bottom: 28px;
+    padding-top: 113px;
+  }
+  @media (max-width: 375px) {
+    font-size: 30px;
+    padding-bottom: 20px;
+    padding-top: 70px;
+  }
 }
 
 .wp-link {
   margin-bottom: 280px;
+  @media (max-width: 768px) {
+    margin-bottom: 120px;
+  }
+  @media (max-width: 375px) {
+    margin-bottom: 90px;
+  }
 }
 
 .wp-link a {
@@ -42,6 +58,14 @@
   background: $white;
   text-decoration: none;
   padding: 12px 35px;
+  @media (max-width: 768px) {
+    font-size: 18px;
+    padding: 10px 27px;
+  }
+  @media (max-width: 375px) {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
 }
 
 .wp-link a:hover {
