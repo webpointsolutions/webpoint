@@ -7,6 +7,7 @@ import SEO from "../components/seo"
 import Maintenance from "../components/Wordpress/Maintenance"
 import Testimonials from "../components/Testimonial/Testimonials"
 import ServicesWordpress from "../components/service-wordpress/service-wordpress"
+import TestPortfolio from "../components/test-portfolio/test-portfolio"
 
 const Wordpress = () => {
   return (
@@ -35,6 +36,7 @@ const Wordpress = () => {
       </section>
 
       <ServicesWordpress />
+      <TestPortfolio />
       <Maintenance />
       <Testimonials />
       <ContactForm />
