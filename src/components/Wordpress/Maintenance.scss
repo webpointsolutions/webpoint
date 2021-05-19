@@ -2,11 +2,15 @@
   width: 100%;
   background-color: $wp-bg-1;
   font-size: 6px;
+
   @media (min-width: 1024px) {
     font-size: 10px;
   }
   &__inner {
     padding: 15em 15px;
+    .row {
+      margin-right: 0;
+    }
   }
   &__heading {
     margin-bottom: 12px;
