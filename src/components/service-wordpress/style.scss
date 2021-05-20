@@ -124,7 +124,7 @@
           border-radius: 12.5015px;
           background-color: #1f4ce4;
           //font-size: 15px;
-          font-size: 1.1vw;
+          font-size: 15px;
           line-height: 121.4%;
         }
 
@@ -169,9 +169,6 @@
         justify-content: flex-start;
         .icon {
           margin: 0 10px 10px 0;
-          .show {
-            font-size: 1.5vw;
-          }
         }
       }
     }
@@ -212,6 +209,10 @@
           padding-top: 30px;
           padding-left: 28px;
           padding-bottom: 15px;
+
+          .show {
+            font-size: 13px;
+          }
           h2 {
             font-family: Circe;
             font-style: normal;
@@ -256,7 +257,12 @@
           //   width: 23%;
           //   // height: 23%;
           // }
-
+          .show {
+            font-size: 12px;
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+          }
           h2 {
             font-family: Circe;
             font-style: normal;
@@ -309,6 +315,13 @@
           padding-top: 14px;
           padding-left: 7px;
           padding-bottom: 10px;
+
+          .show {
+            font-size: 9px;
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+          }
 
           img {
             width: 25%;
