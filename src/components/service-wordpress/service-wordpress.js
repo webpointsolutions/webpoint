@@ -27,6 +27,27 @@ const ServicesWordpress = () => {
   const generalServicesText =
     "We provide a wide range of services for your website needs, to meet your conversional goals."
   const [textData, setText] = useState(generalServicesText)
+  const [classdata, setit] = useState("")
+  const [target, setTarget] = useState("")
+  let speedShow = "notshow",
+    wooShow = "notshow",
+    themeShow = "notshow",
+    maintenaceShow = "notshow",
+    apiShow = "notshow",
+    pluginShow = "notshow"
+  if (target === 0) {
+    speedShow = "show"
+  } else if (target === 2) {
+    pluginShow = "show"
+  } else if (target === 1) {
+    wooShow = "show"
+  } else if (target === 3) {
+    themeShow = "show"
+  } else if (target === 4) {
+    apiShow = "show"
+  } else if (target === 5) {
+    maintenaceShow = "show"
+  }
 
   return (
     <div className="service-box">
@@ -41,7 +62,14 @@ const ServicesWordpress = () => {
           <div
             className="icon"
             onClick={() => setText(displayText.speedOptimizationText)}
+            onMouseOver={() => {
+              setTarget(0)
+            }}
+            onMouseLeave={() => {
+              setTarget("")
+            }}
           >
+            <div className={speedShow}>{displayText.speedOptimizationText}</div>
             <img src={speedOptimization} />
             <h2>
               Speed <br />
@@ -51,7 +79,12 @@ const ServicesWordpress = () => {
           <div
             className="icon"
             onClick={() => setText(displayText.wooCommerceText)}
+            onMouseOver={() => setTarget(1)}
+            onMouseLeave={() => {
+              setTarget("")
+            }}
           >
+            <div className={wooShow}>{displayText.wooCommerceText}</div>
             <img src={woo} />
             <h2>
               Woo
@@ -59,14 +92,32 @@ const ServicesWordpress = () => {
               Commerce
             </h2>
           </div>
-          <div className="icon" onClick={() => setText(displayText.apiText)}>
+          <div
+            className="icon"
+            onClick={() => setText(displayText.apiText)}
+            onMouseOver={() => setTarget(4)}
+            onMouseLeave={() => {
+              setTarget("")
+            }}
+          >
+            <div className={apiShow}>{displayText.apiText}</div>
             <img src={api} />
             <h2>
               API
               <br /> Integration
             </h2>
           </div>
-          <div className="icon" onClick={() => setText(displayText.themeText)}>
+          <div
+            className="icon"
+            onClick={() => setText(displayText.themeText)}
+            onMouseOver={() => {
+              setTarget(3)
+            }}
+            onMouseLeave={() => {
+              setTarget("")
+            }}
+          >
+            <div className={themeShow}>{displayText.themeText}</div>
             <img src={theme} />
             <h2>
               Custom <br />
@@ -76,7 +127,14 @@ const ServicesWordpress = () => {
           <div
             className="icon"
             onClick={() => setText(displayText.pluginsText)}
+            onMouseOver={() => {
+              setTarget(2)
+            }}
+            onMouseLeave={() => {
+              setTarget("")
+            }}
           >
+            <div className={pluginShow}>{displayText.pluginsText}</div>
             <img src={plugins} />
             <h2>
               Custom
@@ -86,7 +144,14 @@ const ServicesWordpress = () => {
           <div
             className="icon"
             onClick={() => setText(displayText.maintenanceText)}
+            onMouseOver={() => {
+              setTarget(5)
+            }}
+            onMouseLeave={() => {
+              setTarget("")
+            }}
           >
+            <div className={maintenaceShow}>{displayText.maintenanceText}</div>
             <img src={maintenance} />
             <h2>
               Monthly <br />
