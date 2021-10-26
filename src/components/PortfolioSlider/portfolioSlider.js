@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import Slider from "react-slick"
 import { Link } from "gatsby"
+import Img from "react-cool-img"
 import "./portfolioSlider.scss"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
@@ -121,7 +122,7 @@ export default function PortfolioSlider() {
                 data-aos="fade-up"
               >
                 <div className="media-container">
-                  <img
+                  <Img
                     src="/images/Youth-Summit.png"
                     alt="Youth Summit"
                     className="img-height"
@@ -144,7 +145,7 @@ export default function PortfolioSlider() {
                 data-aos="fade-up"
               >
                 <div className="media-container">
-                  <img
+                  <Img
                     src="/images/Children's-Century.png"
                     alt="Children's Century Classics"
                     height="700px"
@@ -156,7 +157,7 @@ export default function PortfolioSlider() {
             <div key={6}>
               <Link to="/work/fhcb" className="Work_list" data-aos="fade-up">
                 <div className="media-container">
-                  <img
+                  <Img
                     src="/images/Family-Home-Christian-Books.png"
                     alt="Family Home Christian Books"
                     className="img-height"
@@ -176,7 +177,7 @@ export default function PortfolioSlider() {
                 data-aos="fade-up"
               >
                 <div className="media-container">
-                  <img
+                  <Img
                     src="/images/Corniche-Watches.png"
                     alt="Corniche Watches"
                     className="img-height"
@@ -195,7 +196,7 @@ export default function PortfolioSlider() {
                 data-aos="fade-up"
               >
                 <div className="media-container">
-                  <img
+                  <Img
                     src="/images/Plate-App.png"
                     alt="Plate App"
                     className="img-height"

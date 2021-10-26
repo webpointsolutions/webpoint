@@ -10,6 +10,14 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: `https://webpoint.io/`,
+        policy: [{ userAgent: "*", allow: "/" }],
+
+      }
+    },
+    {
       resolve: "gatsby-plugin-remove-console",
       options: {
         exclude: ["error", "warn"], // <- will be removed all console calls except these
@@ -109,5 +117,10 @@ module.exports = {
         // routeChangeEventName: "YOUR_ROUTE_CHANGE_EVENT_NAME",
       },
     },
+    {
+      resolve: "gatsby-redirect-from",
+      options: {},
+    },
+    "gatsby-plugin-meta-redirect", // make sure this is always the last one
   ],
 }
